@@ -1,0 +1,24 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "clipboard.min.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "clipboard.min.js"
+      :pointmax 10179
+      :fsize 10178
+      :lastmodtime '(22669 38927 813201 744000)
+      :unmatched-syntax '((PAREN_BLOCK 281 . 10177) (PAREN_BLOCK 10 . 13) (punctuation 1 . 2) (PAREN_BLOCK 281 . 10177) (PAREN_BLOCK 10 . 13) (punctuation 1 . 2) (PAREN_BLOCK 389 . 10285) (PAREN_BLOCK 118 . 121) (punctuation 109 . 110)))
+    (semanticdb-table "copy-text.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "copy-text.js"
+      :pointmax 46
+      :fsize 45
+      :lastmodtime '(22669 39097 151519 564000)
+      :unmatched-syntax '((PAREN_BLOCK 30 . 44))))
+  :file "!var!www!cutoff.link.dev!public!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

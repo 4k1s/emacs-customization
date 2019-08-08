@@ -1,0 +1,16 @@
+;; Object 8629308/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "8629308/"
+  :tables
+  (list
+    (semanticdb-table "com.google.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "com.google.js"
+      :pointmax 1814
+      :fsize 1813
+      :lastmodtime '(22633 35431 533628 56000)
+      :unmatched-syntax '((VARIABLE 1735 . 1739) (PAREN_BLOCK 1744 . 1812) (VARIABLE 1605 . 1609) (FUNCTION 1625 . 1633) (PAREN_BLOCK 1634 . 1639) (SEMICOLON 1419 . 1420) (VARIABLE 1422 . 1426) (FUNCTION 1448 . 1456) (PAREN_BLOCK 1457 . 1467) (VARIABLE 1343 . 1347) (FUNCTION 1367 . 1375) (PAREN_BLOCK 1375 . 1380) (VARIABLE 1133 . 1137) (FUNCTION 1155 . 1163) (PAREN_BLOCK 1163 . 1171) (VARIABLE 959 . 971) (FUNCTION 974 . 982) (PAREN_BLOCK 983 . 993) (VARIABLE 842 . 846) (FUNCTION 849 . 857) (PAREN_BLOCK 858 . 860) (VARIABLE 670 . 678) (FUNCTION 681 . 689) (PAREN_BLOCK 690 . 692) (VARIABLE 446 . 451) (FUNCTION 454 . 462) (PAREN_BLOCK 463 . 465) (ELSE 354 . 358) (IF 253 . 255) (PAREN_BLOCK 256 . 282) (COMMA 157 . 158) (PAREN_BLOCK 147 . 157) (COMMA 125 . 126) (PAREN_BLOCK 123 . 125) (DOT 116 . 117) (VARIABLE 16 . 25) (VAR 87 . 90) (PAREN_BLOCK 105 . 116) (punctuation 1 . 4))))
+  :file "!home!talos!8629308!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

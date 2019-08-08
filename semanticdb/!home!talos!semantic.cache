@@ -1,0 +1,47 @@
+;; Object talos/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "talos/"
+  :tables
+  (list
+    (semanticdb-table ".eslintrc.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file ".eslintrc.json"
+      :pointmax 90
+      :fsize 89
+      :lastmodtime '(22771 23177 970280 705000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "csharp_to_python.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    Conversion Utility for C#.NET to Python.
+    
+    5-1-2012 NSC
+    
+    Use is simple:
+    1) create a file called convert.in, and place the block of C# code in it.
+        (This utility works best one function at a time.)
+    2) run this script (./convert.py)
+    3) the results of the conversion will be written to convert.out.
+    
+    NOTE: there is a mode that makes a fair attempt at converting .aspx files to standard html.
+    To try that:
+    1) place your .aspx markup in convert.in
+    2) run this script with an argument (./convert.py aspx)
+    3) results are in convert.out.
+\"\"\"" code nil nil [716 1315])
+            ("re" include nil nil [1317 1326])
+            ("sys" include nil nil [1327 1337])
+            ("out" variable nil nil [1339 1347])
+            ("with" code nil nil [1349 16703])
+            ("with" code nil nil [16708 16841]))          
+      :file "csharp_to_python.py"
+      :pointmax 16841
+      :fsize 16840
+      :lastmodtime '(23158 35457 59537 99000)
+      :unmatched-syntax nil))
+  :file "!home!talos!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

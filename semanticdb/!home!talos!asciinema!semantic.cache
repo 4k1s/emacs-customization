@@ -1,0 +1,166 @@
+;; Object asciinema/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asciinema/"
+  :tables
+  (list
+    (semanticdb-table "api.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("platform" include nil nil [1 16])
+            ("re" include nil nil [17 26])
+            ("asciinema" include nil nil [28 61])
+            ("asciinema.urllib_http_adapter" include nil nil [62 121])
+            ("asciinema.http_adapter" include nil nil [122 176])
+            ("APIError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [210 214]))                  
+                :type "class")
+                nil [179 215])
+            ("Api" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [298 312])
+                            ("self" variable nil (reparse-symbol indented_block_body) [321 337])
+                            ("self" variable nil (reparse-symbol indented_block_body) [346 364])
+                            ("URLLibHttpAdapter" code nil (reparse-symbol indented_block_body) [439 458]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [246 250])
+                            ("url" variable nil (reparse-symbol function_parameters) [252 255])
+                            ("user" variable nil (reparse-symbol function_parameters) [257 261])
+                            ("token" variable nil (reparse-symbol function_parameters) [263 268])
+                            ("http_adapter" variable nil (reparse-symbol function_parameters) [270 282]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [233 459])
+                    ("auth_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [477 481]))                          )
+                        (reparse-symbol indented_block_body) [464 544])
+                    ("upload_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [564 568]))                          )
+                        (reparse-symbol indented_block_body) [549 623])
+                    ("upload_asciicast" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [649 653])
+                            ("path" variable nil (reparse-symbol function_parameters) [655 659]))                          )
+                        (reparse-symbol indented_block_body) [628 1244])
+                    ("_headers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1262 1266]))                          )
+                        (reparse-symbol indented_block_body) [1249 1319])
+                    ("_user_agent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1340 1344]))                          )
+                        (reparse-symbol indented_block_body) [1324 1705])
+                    ("_handle_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1728 1732])
+                            ("status" variable nil (reparse-symbol function_parameters) [1734 1740])
+                            ("body" variable nil (reparse-symbol function_parameters) [1742 1746]))                          )
+                        (reparse-symbol indented_block_body) [1710 2472]))                  
+                :type "class")
+                nil [217 2472]))          
+      :file "api.py"
+      :pointmax 2472
+      :fsize 2471
+      :lastmodtime '(22800 50903 801891 309000)
+      :unmatched-syntax '((INDENT_BLOCK 1070 . 1109) (NEWLINE 1069 . 1070) (COLON 1068 . 1069) (TRY 710 . 713) (AS 1064 . 1066) (NAME 373 . 377) (IF 406 . 408) (ELSE 434 . 438)))
+    (semanticdb-table "urllib_http_adapter.py"
+      :file "urllib_http_adapter.py"
+      :fsize 3304
+      :lastmodtime '(22800 50903 801891 309000))
+    (semanticdb-table "http_adapter.py"
+      :file "http_adapter.py"
+      :fsize 47
+      :lastmodtime '(22800 50903 801891 309000))
+    (semanticdb-table "asciicast.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("json" include nil nil [12 23])
+            ("json.decoder" include nil nil [24 43])
+            ("urllib.request" include nil nil [44 65])
+            ("urllib.error" include nil nil [66 85])
+            ("html.parser" include nil nil [86 104])
+            ("Stdout" include nil nil [118 131])
+            ("Asciicast" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [266 286])
+                            ("self" variable nil (reparse-symbol indented_block_body) [295 313])
+                            ("self" variable nil (reparse-symbol indented_block_body) [322 342])
+                            ("self" variable nil (reparse-symbol indented_block_body) [351 375])
+                            ("self" variable nil (reparse-symbol indented_block_body) [384 406])
+                            ("self" variable nil (reparse-symbol indented_block_body) [415 433])
+                            ("self" variable nil (reparse-symbol indented_block_body) [442 458])
+                            ("self" variable nil (reparse-symbol indented_block_body) [467 485]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [169 173])
+                            ("stdout" variable nil (reparse-symbol function_parameters) [175 181])
+                            ("width" variable nil (reparse-symbol function_parameters) [183 188])
+                            ("height" variable nil (reparse-symbol function_parameters) [190 196])
+                            ("duration" variable nil (reparse-symbol function_parameters) [198 206])
+                            ("command" variable nil (reparse-symbol function_parameters) [208 215])
+                            ("title" variable nil (reparse-symbol function_parameters) [222 227])
+                            ("term" variable nil (reparse-symbol function_parameters) [234 238])
+                            ("shell" variable nil (reparse-symbol function_parameters) [245 250]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [156 486])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [500 504])
+                            ("path" variable nil (reparse-symbol function_parameters) [506 510]))                          )
+                        (reparse-symbol indented_block_body) [491 1116]))                  
+                :type "class")
+                nil [134 1116])
+            ("LoadError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1369 1373]))                  
+                :type "class")
+                nil [1337 1374])
+            ("Parser" type
+               (:superclasses ("html.parser.HTMLParser")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("html" code nil (reparse-symbol indented_block_body) [1446 1483])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1492 1507]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1431 1435]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1418 1508])
+                    ("handle_starttag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1533 1537])
+                            ("tag" variable nil (reparse-symbol function_parameters) [1539 1542])
+                            ("attrs_list" variable nil (reparse-symbol function_parameters) [1544 1554]))                          )
+                        (reparse-symbol indented_block_body) [1513 1918]))                  
+                :type "class")
+                nil [1376 1918])
+            ("fetch" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [1930 1933]))              ) nil [1920 2794])
+            ("load" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [2805 2813]))              ) nil [2796 3448]))          
+      :file "asciicast.py"
+      :pointmax 3448
+      :fsize 3447
+      :lastmodtime '(22800 50903 801891 309000)
+      :unmatched-syntax '((INDENT_BLOCK 3386 . 3448) (NEWLINE 3385 . 3386) (COLON 3384 . 3385) (AS 3380 . 3382) (EXCEPT 3364 . 3370) (INDENT_BLOCK 3302 . 3360) (NEWLINE 3301 . 3302) (COLON 3300 . 3301) (AS 3296 . 3298) (EXCEPT 3260 . 3266) (INDENT_BLOCK 3224 . 3256) (NEWLINE 3223 . 3224) (COLON 3222 . 3223) (TRY 2820 . 2823) (AS 3218 . 3220) (FROM 105 . 109) (PERIOD 110 . 111))))
+  :file "!home!talos!asciinema!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

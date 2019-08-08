@@ -1,0 +1,16 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "custom.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "custom.js"
+      :pointmax 96
+      :fsize 95
+      :lastmodtime '(22685 25699 587895 752000)
+      :unmatched-syntax '((PAREN_BLOCK 7 . 93))))
+  :file "!var!www!oaspe.org!wp-includes!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

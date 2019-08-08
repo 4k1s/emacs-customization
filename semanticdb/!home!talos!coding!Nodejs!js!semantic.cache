@@ -1,0 +1,16 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "test.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "test.js"
+      :pointmax 33
+      :fsize 32
+      :lastmodtime '(23082 12617 315970 401000)
+      :unmatched-syntax '((PAREN_BLOCK 12 . 31) (PAREN_BLOCK 12 . 28) (PAREN_BLOCK 12 . 26) (PAREN_BLOCK 12 . 14))))
+  :file "!home!talos!coding!Nodejs!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object maqebot-nodejs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "maqebot-nodejs/"
+  :tables
+  (list
+    (semanticdb-table "server.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "server.js"
+      :pointmax 1008
+      :fsize 1007
+      :lastmodtime '(22750 57616 366371 639000)
+      :unmatched-syntax '((VARIABLE 936 . 943) (PAREN_BLOCK 947 . 1006) (VARIABLE 914 . 920) (PAREN_BLOCK 927 . 933) (VAR 115 . 118) (PAREN_BLOCK 145 . 911) (VAR 83 . 86) (PAREN_BLOCK 100 . 112) (VAR 55 . 58) (PAREN_BLOCK 73 . 81) (VAR 29 . 32) (PAREN_BLOCK 46 . 53) (PAREN_BLOCK 19 . 27)))
+    (semanticdb-table "bot.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "bot.js"
+      :pointmax 1741
+      :fsize 1740
+      :lastmodtime '(22750 50941 115350 391000)
+      :unmatched-syntax '((FUNCTION 56 . 64) (PAREN_BLOCK 64 . 78))))
+  :file "!var!www!maqetests!maqebot-nodejs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,270 @@
+;; Object zilingo.com/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zilingo.com/"
+  :tables
+  (list
+    (semanticdb-table "Men"
+      :major-mode 'html-mode
+      :tags 
+        '( ("!function(n,t){\"use strict\";function e(n,t,e){n.addEventListener?n.addEventListener(t,e,!1):n.attachEvent&&n.attachEvent(\"on\"+t,e)}function o(n,o,r,i){var a=t.createElement(n?\"script\":\"link\");e(a,\"error\",r),n?(a.type=\"text/javascript\",a.async=!0,a.src=o):(a.rel=\"stylesheet\",a.async=!0,a.href=o),i&&(a.onload=i),t.getElementsByTagName(\"head\")[0].appendChild(a)}function r(n,t){return function(n,e){function r(){o(t,n,function(){i&&(i=!1,r()),console.log(\"There was some error in loading the resource !!\")},e)}if(a[n])return!1;a[n]=!0;var i=!0;r()}}function i(){this.logger=new c,this.load={js:r(this,!0),css:r(this)}}n.ZILINGO={};var a={},c=function(){this.log=function(n){console.log(\"msg\")}},s=function(n,t,e,o){return!1},u={},f={},l=function(n,t){for(var e=[],o=0;o<n.length;o++)e[o]=u[n[o]];t.apply(null,e)},h=function(n){return function(t){for(var e=!0,o=[],r=0;r<n.length;r++)u.hasOwnProperty(n[r])||(e=!1,o.push(n[r]));e?!function(n,t){setTimeout(function(){d(n,t)},0)}(n,t):f.hasOwnProperty(o.join(\",\"))?f[o].callbacks.push({fn:t,args:n}):f[o]={depends:o,callbacks:[{fn:t,args:n}]}}},g=function(n){return function(){return{execute:h(arguments,this),register:s(arguments,!0,n,this)}}},d=function(t,e){setTimeout(function(o){try{l(t,e)}catch(r){var i=\"Global\";t&&t.length>0&&(i=t[0]),n.CommandForUI.when(\"m-analytics\").execute(function(n){console.log(),n.sendJsError({message:r.message+\" - \"+i,info:window.location.href})})}},0,t)},p=function(n){for(var t in f){for(var e=f[t].depends,o=0;o<e.length;o++)n==e[o]&&e.splice(o,1);if(0===e.length){var r=f[t].callbacks;delete f[t];for(var i in r)d(r[i].args,r[i].fn)}}};i.prototype={format:function(n,t){if(!u.hasOwnProperty(n)){var e=typeof t;if(\"string\"===e)try{t=JSON.parse(t)}catch(o){return}else if(\"object\"!==e&&\"function\"!=e)return console.log(\"The format should be an object or a function\"),!1;u[n]=t,p(n)}},register:function(n,t){if(!u.hasOwnProperty(n))return u[n]=t(),p(n),u},execute:function(n){var t=typeof n;return\"string\"===t&&u.hasOwnProperty(n)?u[n]:void(\"function\"==t?n():console.log(\"Either name not a string or a function \"))},now:function(n,t){u.hasOwnProperty(n)||(u[n]=t),u[n]()},when:g()},n.CommandForUI=new i}(window,document);" section nil nil [111 2345])
+            ("CommandForUI.when(\"c-analytics\").execute(function(e){CommandForUI.register(\"u-ematics\",function(){!function(e,t,n,c,i,r,o){e.EmaticsObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date,r=t.createElement(n),o=t.getElementsByTagName(n)[0],r.async=1,r.src=c,o.parentNode.insertBefore(r,o)}(window,document,\"script\",\"//api.ematicsolutions.com/v1/ematic.min.js\",\"ematics\");var t=function(t,n){e.ematics.isEnabled&&ematics(\"log\",\"product\",t,n)},n=function(e){return e?e.amount+\" \"+e.currency:\"\"},c=function(e){var t=\"\",c=\"\",i=\"\";return e.categoriesOpt&&e.categoriesOpt.subLevelCategoryOpt&&(t=e.categoriesOpt.subLevelCategoryOpt.id),e.productReferencedPrices.discountedPriceOpt||e.productQualifiedPrices.discountedPricePerUnitOpt?(c=n(e.productReferencedPrices.discountedPriceOpt||e.productQualifiedPrices.discountedPricePerUnitOpt),i=n(e.productReferencedPrices.originalPriceOpt||e.productQualifiedPrices.pricePerUnitOpt)):c=n(e.productReferencedPrices.originalPriceOpt||e.productQualifiedPrices.pricePerUnitOpt),{id:e.productId,categoryId:t,price:c,misc1:i,quantity:e.quantityOpt?e.quantityOpt:\"1\",name:e.productName,brandName:e.brandNameOpt?e.brandNameOpt:\"\",desc:e.productDescriptionOpt?e.productDescriptionOpt.replace(/\\n/g,\"\"):\"\",imageUrl:e.image,link:window.location.origin+e.link}},i=function(e){for(var t=[],n=0;n<e.cartItems.length;n++)t.push(c(e.cartItems[n]));return t};return{initialize:function(){e.ematics.isEnabled&&ematics(\"create\",e.ematics.ematicApikey,e.ematics.opt)},productViewed:function(n){e.ematics.isEnabled&&t(\"browse\",[c(n)])},productAddedToCart:function(n){e.ematics.isEnabled&&t(\"cart\",[c(n)])},cartViewed:function(n){e.ematics.isEnabled&&t(\"cart\",i(n))},cartConfirmed:function(n){e.ematics.isEnabled&&t(\"checkout\",i(n))},paymentSuccess:function(n){e.ematics.isEnabled&&t(\"convert\",i(n))}}})}),CommandForUI.when(\"u-base-utils\").execute(function(e){CommandForUI.register(\"u-facebook-analytics\",function(){!function(e,t,n,c,i,r,o){e.fbq||(i=e.fbq=function(){i.callMethod?i.callMethod.apply(i,arguments):i.queue.push(arguments)},e._fbq||(e._fbq=i),i.push=i,i.loaded=!0,i.version=\"2.0\",i.queue=[],r=t.createElement(n),r.async=!0,r.src=c,o=t.getElementsByTagName(n)[0],o.parentNode.insertBefore(r,o))}(window,document,\"script\",\"https://connect.facebook.net/en_US/fbevents.js\");var e=function(e){var t={content_type:\"product\",content_ids:[e.productId],content_name:e.productName,content_category:e.categoriesOpt?e.categoriesOpt.name:\"products\"};return e.productReferencedPrices.originalPriceOpt?(t.value=e.productReferencedPrices.originalPriceOpt.amount,t.currency=e.productReferencedPrices.originalPriceOpt.currency):e.productQualifiedPrices.pricePerUnitOpt&&(t.value=e.productQualifiedPrices.pricePerUnitOpt.amount,t.currency=e.productQualifiedPrices.pricePerUnitOpt.currency),t},t=function(e){var t=[];if(e&&e.length>0)for(var n=0;n<e.length;n++)t.push(e[n].productId);return t};return{initialize:function(e){fbq(\"init\",e)},pageView:function(){fbq(\"track\",\"PageView\")},productViewed:function(t){fbq(\"track\",\"ViewContent\",e(t))},productAddedToWishlist:function(t){fbq(\"track\",\"AddToWishlist\",e(t))},productAddedToCart:function(t){fbq(\"track\",\"AddToCart\",e(t))},cartConfirmed:function(){fbq(\"track\",\"InitiateCheckout\")},paymentStarted:function(){fbq(\"track\",\"AddPaymentInfo\")},paymentSuccess:function(e){fbq(\"track\",\"Purchase\",{content_ids:t(e.cartItems),content_type:\"product\",value:e.payableAmount.amount,currency:e.payableAmount.currency})},searchedFor:function(e){fbq(\"track\",\"Search\",{search_string:e})}}}),CommandForUI.register(\"u-gtm-analytics\",function(){var t={accountId:!1,isEnabled:!1},n=function(e){!function(e,t,n,c,i){e[c]=e[c]||[],e[c].push({\"gtm.start\":(new Date).getTime(),event:\"gtm.js\"});var r=t.getElementsByTagName(n)[0],o=t.createElement(n),a=\"dataLayer\"!=c?\"&l=\"+c:\"\";o.async=!0,o.src=\"https://www.googletagmanager.com/gtm.js?id=\"+i+a,r.parentNode.insertBefore(o,r)}(window,document,\"script\",\"dataLayer\",e)};return{initialize:function(c){e.extend(t,c),n(t.accountId)},sendEvent:function(e){dataLayer.push({event:e.name,data:{products:e.products||[],cartInfo:e.cartInfo||{},user:e.user||{},option:e.option||\"\"}})}}}),CommandForUI.register(\"u-criteo-analytics\",function(){!function(e,t,n,c,i,r,o){r=t.createElement(n),o=t.getElementsByTagName(n)[0],e[i]=e[i]||[],r.async=1,r.src=c,o.parentNode.insertBefore(r,o)}(window,document,\"script\",\"//static.criteo.net/js/ld/ld.js\",\"criteo_q\");var t={accountId:!1,hashedUserId:!1,clientType:!1,isEnabled:!1},n=function(){return[{event:\"setAccount\",account:t.accountId},{event:\"setHashedEmail\",email:t.hashedUserId},{event:\"setSiteType\",type:t.clientType}]},c=function(e){var c=n()||[];t.isEnabled&&(c.push(e),criteo_q.push(c))};return{initialize:function(n){e.extend(t,n)},viewHome:function(){c({event:\"viewHome\"})},viewProductList:function(e){c({event:\"viewList\",item:e})},productViewed:function(e){c({event:\"viewItem\",item:e.productId||\"\"})},cartViewed:function(t){c({event:\"viewBasket\",item:e.map(t.cartItems,function(e){return{id:e.productId,price:e.productReferencedPrices.originalPriceOpt?e.productReferencedPrices.originalPriceOpt.amount:e.productQualifiedPrices.pricePerUnitOpt?e.productQualifiedPrices.pricePerUnitOpt.amount:0,quantity:e.quantityOpt||1}})})},paymentSuccess:function(t){c({event:\"trackTransaction\",id:t.checkoutIdOpt,item:e.map(t.cartItems,function(e){return{id:e.productId,price:e.productReferencedPrices.originalPriceOpt?e.productReferencedPrices.originalPriceOpt.amount:e.productQualifiedPrices.pricePerUnitOpt?e.productQualifiedPrices.pricePerUnitOpt.amount:0,quantity:e.quantityOpt||1}})})}}}),CommandForUI.register(\"u-shopback\",function(){var t={accountId:!1,isEnabled:!1},n=function(e,t,n){var c=document.getElementsByTagName(\"script\"),i=Number(c.length)-1,r=document.getElementsByTagName(\"script\")[i],o=document.createElement(\"img\"),a=\"https://shopback.go2cloud.org/aff_l?offer_id=\"+e+\"&adv_sub=\"+t+\"&amount=\"+n.amount;o.src=a,o.width=1,o.height=1,o.style=\"display:none\",r.parentNode.insertBefore(o,r)};return{initialize:function(n){e.extend(t,n)},sendTrackingEvent:function(e){t.isEnabled&&n(t.accountId,e.checkoutIdOpt,e.payableAmount)}}}),CommandForUI.register(\"u-iprice\",function(){var t={accountId:!1,isEnabled:!1},n=function(e,t,n){var c=document.getElementsByTagName(\"script\"),i=Number(c.length)-1,r=document.getElementsByTagName(\"script\")[i],o=document.createElement(\"iframe\"),a=\"https://ipricegroup.go2cloud.org/aff_l?offer_id=\"+e+\"&adv_sub=\"+t+\"&amount=\"+n.amount+\"&conversion_unique_id=\"+t;o.src=a,o.width=1,o.height=1,o.scrolling=\"no\",o.frameborder=\"0\",o.style=\"display:none\",r.parentNode.insertBefore(o,r)};return{initialize:function(n){e.extend(t,n)},sendTrackingEvent:function(e){t.isEnabled&&n(t.accountId,e.checkoutIdOpt,e.payableAmount)}}})}),CommandForUI.when(\"c-analytics\",\"u-gtm-analytics\",\"u-facebook-analytics\",\"u-criteo-analytics\",\"u-ematics\",\"u-shopback\",\"u-iprice\").execute(function(e,t,n,c,i,r,o){CommandForUI.register(\"m-analytics\",function(){return{initialize:function(){t.initialize(e.gtm),t.sendEvent({name:\"authentication\",user:e.user}),n.initialize(e.facebook),c.initialize(e.criteo),o.initialize(e.iprice),r.initialize(e.shopback),i.initialize()},pageView:function(){n.pageView()},viewHome:function(){c.viewHome()},subCategoryViewed:function(e){c.viewProductList(e)},categoryViewed:function(e,t){c.viewProductList(t)},topLevelCategoryViewed:function(){},offerViewed:function(e,t){c.viewProductList(t)},storefrontViewed:function(e,t){c.viewProductList(t)},searchedFor:function(e){n.searchedFor(e)},homePage:function(){t.sendEvent({name:\"homePage\"})},androidBannerAd:function(e){t.sendEvent({name:\"androidBanner\",option:e})},sendJsError:function(e){t.sendEvent({name:\"jsError\",option:e.message+\" - \"+e.info})},productViewClick:function(e){t.sendEvent({name:\"productViewClick\",products:[e]})},productViewDetail:function(e){t.sendEvent({name:\"productViewDetail\",products:[e]}),n.productViewed(e),c.productViewed(e),i.productViewed(e)},productAddToWishlistClick:function(e){t.sendEvent({name:\"productAddToWishlistClick\",products:[e]})},productRemoveFromWishlistClick:function(e){t.sendEvent({name:\"productRemoveFromWishlistClick\",products:[e]})},productAddedToWishlist:function(e){t.sendEvent({name:\"productAddedToWishlist\",products:[e]}),n.productAddedToWishlist(e)},productRemovedFromWishlist:function(e){t.sendEvent({name:\"productRemovedFromWishlist\",products:[e]})},productAddToCartClick:function(e){t.sendEvent({name:\"productAddToCartClick\",products:[e]})},productRemoveFromCartClick:function(e){t.sendEvent({name:\"productRemoveFromCartClick\",products:[e]})},productAddedToCart:function(e){t.sendEvent({name:\"productAddedToCart\",products:[e],option:\"Add\"}),n.productAddedToCart(e)},productRemovedFromCart:function(e){t.sendEvent({name:\"productRemovedFromCart\",products:[e],option:\"Removed\"})},productMoveToWishlistClick:function(e){t.sendEvent({name:\"productMoveToWishlistClick\",products:[e]})},productMovedToWishlist:function(e){t.sendEvent({name:\"productMovedToWishlist\",products:[e],option:\"Moved\"})},cartViewed:function(e){t.sendEvent({name:\"cartViewed\",products:e.cartItems,cartInfo:e}),i.cartViewed(e),c.cartViewed(e)},cartConfirmClick:function(e){t.sendEvent({name:\"cartConfirmClick\",products:e.cartItems,cartInfo:e})},cartConfirmed:function(e){var c=document.referrer.indexOf(\"/checkout/reviewAndPay\")>-1?\"From Payment\":\"From Cart\";t.sendEvent({name:\"cartConfirmed\",products:e.cartItems,cartInfo:e,option:c}),n.cartConfirmed(),i.cartConfirmed(e)},addressSelect:function(e,n){t.sendEvent({name:\"addressSelect\",products:e.cartItems,cartInfo:e,option:n})},addressConfirmed:function(e){var n=e.addressOpt?e.addressOpt.region:\"\";document.referrer.indexOf(\"/checkout/reviewAndPay\")>-1?\"From Pay and Review\":\"\";t.sendEvent({name:\"addressConfirmed\",products:e.cartItems,cartInfo:e,option:n})},paymentModeSelected:function(e,n){t.sendEvent({name:\"paymentModeSelected\",products:e.cartItems,cartInfo:e,option:n})},paymentModeConfirmed:function(e){var n=e.paymentInstrumentOpt?e.paymentInstrumentOpt:\"\";t.sendEvent({name:\"paymentModeConfirmed\",products:e.cartItems,cartInfo:e,option:n})},paymentStarted:function(e){t.sendEvent({name:\"paymentStarted\",option:e||\"Cash\"}),n.paymentStarted(e||\"Cash\")},paymentCancelled:function(e){t.sendEvent({name:\"paymentCancelled\",option:e})},paymentUnknown:function(){t.sendEvent({name:\"paymentUnknown\"})},paymentPending:function(){t.sendEvent({name:\"paymentPending\"})},paymentFailed:function(e){t.sendEvent({name:\"paymentFailed\",option:e})},paymentSuccess:function(){t.sendEvent({name:\"paymentSuccess\"})},checkoutSuccess:function(e){t.sendEvent({name:\"checkoutSuccess\",products:e.cartItems,cartInfo:e}),i.paymentSuccess(e),c.paymentSuccess(e),r.sendTrackingEvent(e),o.sendTrackingEvent(e)},orderSuccess:function(e){t.sendEvent({name:\"orderSuccess\",products:e.cartItems,cartInfo:e}),n.paymentSuccess(e),i.paymentSuccess(e),c.paymentSuccess(e),r.sendTrackingEvent(e),o.sendTrackingEvent(e)}}})});" section nil nil [2345 13950])
+            ("CommandForUI.register('vendors', function() {
+                    CommandForUI.load.js('/assets/javascripts/lib/ee5c43d760af5fea284fd62fdcc12ebb-libs-minimal.js');
+                });
+            
+            
+                CommandForUI.when('m-analytics').execute(function(analytics) {
+                    analytics.initialize();
+                });" section nil nil [13950 14467])
+            ("Men | Zilingo Thailand" section nil nil [14467 16328])
+            ("{
+  \"@context\": \"http://schema.org\",
+  \"@type\": \"Organization\",
+  \"name\": \"Zilingo\",
+  \"url\": \"https://zilingo.com\",
+  \"logo\": \"/assets/images/header/d35b3f0aff85eaffc834cf52eac8db03-zilingo-logo.png\"
+}" section nil nil [16328 16583])
+            (".filter-mobile-hide {
+                    display: none;
+                }" section nil nil [16583 16948])
+            ("var loaderIcon = document.createElement('img');
+            loaderIcon.src = \"/assets/images/loaders/f0efaabcafcf26b8429f6e7a150588b0-preloader2-general.gif\";
+            loaderIcon.style = \"width:50px; height: 50px;\";" section nil nil [16948 17425])
+            ("Failed to fetch data, Please try again" section nil nil [17425 17889])
+            ("CommandForUI.format(\"c-modal\", {
+        \"rootId\": 'body',
+        \"modalClass\": \".m-modal\",
+        \"overlay\": 'm-modal__wrapper',
+        \"modalContentClass\": '.content__dynamic',
+        \"modalClose\": 'content__close-modal',
+        \"modalCloseClass\": '.content__close-modal',
+        \"errorMsgClass\": '.dynamic__error-msg'
+    });" section (:members 
+              ( ("Orders" anchor nil nil [19048 19051])
+                ("Wishlist" anchor nil nil [19187 19190])
+                ("Thailand" anchor nil nil [19320 19323]))              ) nil [17889 19563])
+            ("ไทย" section (:members 
+              ( ("Buy Wholesale" anchor nil nil [20433 20436])
+                ("Sell on Zilingo" anchor nil nil [20762 20765]))              ) nil [19563 23192])
+            ("CommandForUI.format(\"c-nav-drawer\", {
+              url: \"/api/v1/navDrawerDesktop\",
+              type: \"desktop\"
+            });
+        
+
+
+                CommandForUI.format(\"c-cart\", {
+                  url:  '/api/v1/cart/cartSize',
+                  handler: \"#cart-count\"
+                });
+
+                CommandForUI.format(\"c-base-search\", {
+                  url: \"/en-th/search\",
+                  type: \"desktop\"
+                });
+
+                CommandForUI.format(\"c-search-autocomplete\", {
+                   searchElmId : '#app-search',
+                   apiUrl : \"/api/v1/search/userSuggestions\"
+                });" section (:members 
+              ( ("Read about our easy returns and refunds!" anchor nil nil [26513 26516])
+                ("Men" section (:members 
+                  ( ("CommandForUI.format(\"c-filter-desktop\", {
+                    \"defer\" : false,
+
+                    \"url\": \"/filter/top_level_category/M\",
+                    \"availableFilter\" : [\"after\",\"sort_order\",\"top_level_category\",\"category\",\"sub_category\",\"color\",\"facet_choice\",\"price_range\",\"brand\",\"size_choice\",\"discount_range\"],
+                    \"brandsList\" : [\"City Color Cosmetics\",\"Skechers\",\"aramis\",\"Kat Von D\",\"Furla\",\"Coccinelle\",\"PERIPERA\",\"BALLY\",\"Aeromatic 1912\",\"Elf Cosmetics\",\"VIKTOR & ROLF\",\"Suunto\",\"shu uemura\",\"Smashbox\",\"Phillip Lim\",\"ARMANI\",\"Casio\",\"Abercrombie & Fitch\",\"THEFACESHOP\",\"frei öl\",\"Dunhill\",\"Rawrow\",\"DONNA CHANG\",\"New Balance\",\"IOPE\",\"LAB SERIES\",\"Mustika Ratu\",\"Balenciaga\",\"SK-II\",\"Klairs\",\"CÉLINE\",\"Rimmel\",\"ColourPop\",\"The Wet Brush\",\"Seiko\",\"Longchamp\",\"Anne Klein\",\"Thierry Mugler\",\"Minarno\",\"Escada\",\"Misaki\",\"SISLEY\",\"CRISTIANO RONALDO\",\"Morphe Brushes\",\"VINCE CAMUTO\",\"SNRD\",\"Alexander McQueen\",\"Proenza Schouler\",\"Paul Smith\",\"PHYTO\",\"Greyhours\",\"Hugo Boss\",\"Mulberry\",\"Gant\",\"ETHNOTEK\",\"Davidoff\",\"T-LEVEL\",\"TOM FORD\",\"Sleek MakeUP\",\"The X Woof\",\"Vaseline\",\"Inglot\",\"JUICY COUTURE\",\"Prada\",\"ELIE SAAB\",\"KOSÉ\",\"LASplash Cosmetics\",\"KARL LAGERFELD\",\"Jimmy Choo\",\"Coach\",\"EVE LOM\",\"DAVID BECKHAM\",\"theBalm\",\"SEAN JOHN\",\"China Glaze\",\"JENNIFER LOPEZ\",\"TAYLOR SWIFT\",\"Louis Vuitton\",\"Cathy Doll\",\"SHEENe\",\"Nars\",\"Guy Laroche\",\"MKUP\",\"la prairie\",\"Adidas\",\"MINON\",\"Skagen\",\"KATY PERRY\",\"Tarte Cosmetics\",\"Ray-Ban\",\"MAX BENJAMIN\",\"UNDER  ARMOUR\",\"Kenneth Cole\",\"Need More\",\"Cotton labo\",\"LIERAC\",\"COLAB\",\"Estée Lauder\",\"Jason Markk\",\"Neutrogena\",\"ARI by ARIANA GRANDE\",\"BYREDO\",\"Gucci\",\"FANCL\",\"Anello\",\"O·P·I\",\"MAKE OVER\",\"LALIQUE\",\"Sembonia\",\"diptyque\",\"MOODmatcher\",\"Kulte\",\"Bellroy\",\"Cailyn\",\"NEW ERA\",\"LALU\",\"Kipling\",\"Tocco Toscano\",\"GIOVANNI\",\"SkinLYcious\",\"Hermle\",\"W.Lab\",\"COSRX\",\"AZZARO\",\"SILKYGIRL\",\"M·A·C\",\"Bellápierre Cosmetics\",\"Dermablend\",\"BURTON\",\"TED  BAKER\",\"Trussardi\",\"dosh\",\"Emporio Armani\",\"BIOTHERM\",\"Citizen\",\"Nina Ricci\",\"Crabtree & Evelyn\",\"RALPH LAUREN\",\"ADAM LEVINE\",\"Girlactik\",\"LAPOTHICELL\",\"Miu Miu\",\"LANVIN\",\"Happy Socks\",\"VANS\",\"Anastasia Beverly Hills\",\"Reebok\",\"Sivanna\",\"Tory Burch\",\"Cartier\",\"BOURJOIS\",\"MAGICA MENTE\",\"Kylie Cosmetics\",\"Makeup Revolution\",\"DARPHIN\",\"Converse\",\"Bio-Oil\",\"Lancôme\",\"Coen Anders\",\"Ford\",\"Lucca Vudor\",\"NARCISO\",\"LA Girl\",\"Marc Jacobs\",\"philosophy\",\"BENTLEY\",\"wet n wild\",\"Herschel Supply Co.\",\"Asics\",\"Fendi\",\"Sarah Jessica Parker\",\"UNITED COLORS OF BENETTON\",\"CHIARA FERRAGNI\",\"MVMT\",\"Harderbrush\",\"SWAROVSKI\",\"Mercedes-Benz\",\"Maybelline\",\"Ben Sherman\",\"Etude House\",\"BOBBI BROWN\",\"Oakley\",\"Shop at Banana\",\"KÉRASTASE\",\"iORA\",\"Rhythm\",\"JO MALONE\",\"Tommy Hilfiger\",\"Superdry\",\"T.P.O\",\"trilogy\",\"Lime Crime\",\"Incase\",\"HERMÈS\",\"Lavina\",\"ESTIARA\",\"CRAFTED GOODS\",\"Fjallraven Kanken\",\"Marc by Marc Jacobs\",\"VERA WANG\",\"Puressentiel\",\"Son & Park\",\"Laneige\",\"DKNY\",\"KIEHL'S\",\"Valentino\",\"LOEWE\",\"Armani Exchange\",\"Hoseki\",\"Kate Spade\",\"Tocco Tenero\",\"Yves Saint Laurent\",\"Carlo Rino\",\"Laura Mercier\",\"HUDA Beauty\",\"KLARITY\",\"Dickies\",\"Lifetherapy\",\"Paris Hilton\",\"alba BOTANICA\",\"Salt n Pepper\",\"Nike\",\"Espirit\",\"IKOU\",\"Marks & Spencer\",\"Betsey Johnson\",\"Stührling\",\"Stella McCartney\",\"LABIOTTE\",\"julia'r\",\"Tracce\",\"Lee Vierra\",\"Ingersoll Watch Company\",\"Guerlain\",\"Urban Decay\",\"Burberry\",\"MM6 MAISON MARGIELA\",\"Palmer's\",\"L.A. Girl\",\"Gerard Cosmetics\",\"Rebecca Minkoff\",\"M.R.K.T.\",\"QWSTION\",\"Palladium\",\"Zoya\",\"Michael Kors\",\"Casio Baby-G\",\"Vivienne Westwood\",\"Jurlique\",\"MIZZU\",\"Nixon\",\"Jean Paul GAULTIER\",\"bliss\",\"NOOKA\",\"JEANNE ARTHES\",\"John Varvatos\",\"Wristology\",\"Twemco\",\"Milani\",\"CREED\",\"GLASSHOUSE\",\"GARNIER\",\"Puma\",\"Jordana\",\"DOONEY & BOURKE\",\"Avène\",\"Lee Cooper\",\"S.T. Dupont\",\"MEDAVITA\",\"Mane 'n Tail\",\"Casio Edifice\",\"VICTORINOX\",\"LOVE MOSCHINO\",\"Hellolulu\",\"Batiste\",\"Alviero Martini\",\"Tissot\",\"Guess\",\"L'Occitane\",\"treaclemoon\",\"Lancaster Paris\",\"Ferrari\",\"L.A. Colors\",\"FOOT MEDI\",\"Kenzo\",\"Giffarine\",\"Aries Gold\",\"Victoria's Secret\",\"Samsonite\",\"THULE\",\"Deep Blue\",\"JOOP!\",\"FCUK\",\"Montblanc\",\"symbolize\",\"Kaminomoto\",\"Boots\",\"Olivia Burton\",\"Swatch\",\"Chanel\",\"NAUTICA\",\"JUSTIN BIEBER\",\"Timbuk2\",\"Diesel\",\"FOSSIL\",\"Zadig & Voltaire\",\"Sulwhasoo\",\"Aveda\",\"AQUOLINA\",\"Elizabeth Arden\",\"LACOSTE\",\"Etienne Aigner\",\"TSUBU\",\"Braun\",\"Mejikaliner\",\"b.liv\",\"Carl & Oak\",\"Clé de Peau\",\"LA MER\",\"Clarins\",\"LOLITA LEMPICKA\",\"Versace\",\"Anna Sui\",\"Q&Q\",\"Bonia\",\"Casio G-Shock\",\"Ecotools\",\"Antonio Banderas\",\"Panasonic\",\"BH Cosmetics\",\"Dove\",\"Bvlgari\",\"Pony Effect\",\"CRÈME SIMON\",\"Cellnique\",\"Innisfree\",\"Chloé\",\"ARMAF\",\"I'M MEME\",\"Charlotte Tilbury\",\"CHROME\",\"CLUSE\",\"Purbasari\",\"Oriental Princess\",\"Ikea\",\"DIOR\",\"Daniel Wellington\",\"Cure\",\"Calvin Klein\",\"PUPA\",\"CAROLINA HERRERA\",\"JĀSÖN\",\"AFNAN\",\"Gres Cabotine\",\"Paco Rabanne\",\"Everbest\",\"Essie\",\"LA Splash Cosmetics\",\"Arnette\",\"NYX Cosmetics\",\"Clinique\",\"Givenchy\",\"Becca\",\"SHISEIDO\",\"APRILSKIN\",\"Freewaters\",\"L'Oréal\",\"Giorgio Armani\",\"Jeffree Star Cosmetics\",\"Marshal\",\"ORIGINS\",\"KANEBO\",\"Sebamed\",\"TONYMOLY\",\"Deonatulle\",\"Bottega Veneta\",\"Issey Miyake\",\"Aer\",\"Ermenegildo Zegna\",\"Odbo\",\"Palmolive\",\"NUXE\",\"REVLON\",\"Ice Watch\",\"Kleancolor\",\"RESHOEVN8R\",\"Dolce & Gabbana\",\"Salvatore Ferragamo\"]
+                });" anchor nil nil [27651 27654]))                  ) nil [27073 28550]))              ) nil [23192 28550])
+            ("CommandForUI.format(\"c-filter-desktop\", {
+                    \"defer\" : false,
+
+                    \"url\": \"/filter/top_level_category/M\",
+                    \"availableFilter\" : [\"after\",\"sort_order\",\"top_level_category\",\"category\",\"sub_category\",\"color\",\"facet_choice\",\"price_range\",\"brand\",\"size_choice\",\"discount_range\"],
+                    \"brandsList\" : [\"City Color Cosmetics\",\"Skechers\",\"aramis\",\"Kat Von D\",\"Furla\",\"Coccinelle\",\"PERIPERA\",\"BALLY\",\"Aeromatic 1912\",\"Elf Cosmetics\",\"VIKTOR & ROLF\",\"Suunto\",\"shu uemura\",\"Smashbox\",\"Phillip Lim\",\"ARMANI\",\"Casio\",\"Abercrombie & Fitch\",\"THEFACESHOP\",\"frei öl\",\"Dunhill\",\"Rawrow\",\"DONNA CHANG\",\"New Balance\",\"IOPE\",\"LAB SERIES\",\"Mustika Ratu\",\"Balenciaga\",\"SK-II\",\"Klairs\",\"CÉLINE\",\"Rimmel\",\"ColourPop\",\"The Wet Brush\",\"Seiko\",\"Longchamp\",\"Anne Klein\",\"Thierry Mugler\",\"Minarno\",\"Escada\",\"Misaki\",\"SISLEY\",\"CRISTIANO RONALDO\",\"Morphe Brushes\",\"VINCE CAMUTO\",\"SNRD\",\"Alexander McQueen\",\"Proenza Schouler\",\"Paul Smith\",\"PHYTO\",\"Greyhours\",\"Hugo Boss\",\"Mulberry\",\"Gant\",\"ETHNOTEK\",\"Davidoff\",\"T-LEVEL\",\"TOM FORD\",\"Sleek MakeUP\",\"The X Woof\",\"Vaseline\",\"Inglot\",\"JUICY COUTURE\",\"Prada\",\"ELIE SAAB\",\"KOSÉ\",\"LASplash Cosmetics\",\"KARL LAGERFELD\",\"Jimmy Choo\",\"Coach\",\"EVE LOM\",\"DAVID BECKHAM\",\"theBalm\",\"SEAN JOHN\",\"China Glaze\",\"JENNIFER LOPEZ\",\"TAYLOR SWIFT\",\"Louis Vuitton\",\"Cathy Doll\",\"SHEENe\",\"Nars\",\"Guy Laroche\",\"MKUP\",\"la prairie\",\"Adidas\",\"MINON\",\"Skagen\",\"KATY PERRY\",\"Tarte Cosmetics\",\"Ray-Ban\",\"MAX BENJAMIN\",\"UNDER  ARMOUR\",\"Kenneth Cole\",\"Need More\",\"Cotton labo\",\"LIERAC\",\"COLAB\",\"Estée Lauder\",\"Jason Markk\",\"Neutrogena\",\"ARI by ARIANA GRANDE\",\"BYREDO\",\"Gucci\",\"FANCL\",\"Anello\",\"O·P·I\",\"MAKE OVER\",\"LALIQUE\",\"Sembonia\",\"diptyque\",\"MOODmatcher\",\"Kulte\",\"Bellroy\",\"Cailyn\",\"NEW ERA\",\"LALU\",\"Kipling\",\"Tocco Toscano\",\"GIOVANNI\",\"SkinLYcious\",\"Hermle\",\"W.Lab\",\"COSRX\",\"AZZARO\",\"SILKYGIRL\",\"M·A·C\",\"Bellápierre Cosmetics\",\"Dermablend\",\"BURTON\",\"TED  BAKER\",\"Trussardi\",\"dosh\",\"Emporio Armani\",\"BIOTHERM\",\"Citizen\",\"Nina Ricci\",\"Crabtree & Evelyn\",\"RALPH LAUREN\",\"ADAM LEVINE\",\"Girlactik\",\"LAPOTHICELL\",\"Miu Miu\",\"LANVIN\",\"Happy Socks\",\"VANS\",\"Anastasia Beverly Hills\",\"Reebok\",\"Sivanna\",\"Tory Burch\",\"Cartier\",\"BOURJOIS\",\"MAGICA MENTE\",\"Kylie Cosmetics\",\"Makeup Revolution\",\"DARPHIN\",\"Converse\",\"Bio-Oil\",\"Lancôme\",\"Coen Anders\",\"Ford\",\"Lucca Vudor\",\"NARCISO\",\"LA Girl\",\"Marc Jacobs\",\"philosophy\",\"BENTLEY\",\"wet n wild\",\"Herschel Supply Co.\",\"Asics\",\"Fendi\",\"Sarah Jessica Parker\",\"UNITED COLORS OF BENETTON\",\"CHIARA FERRAGNI\",\"MVMT\",\"Harderbrush\",\"SWAROVSKI\",\"Mercedes-Benz\",\"Maybelline\",\"Ben Sherman\",\"Etude House\",\"BOBBI BROWN\",\"Oakley\",\"Shop at Banana\",\"KÉRASTASE\",\"iORA\",\"Rhythm\",\"JO MALONE\",\"Tommy Hilfiger\",\"Superdry\",\"T.P.O\",\"trilogy\",\"Lime Crime\",\"Incase\",\"HERMÈS\",\"Lavina\",\"ESTIARA\",\"CRAFTED GOODS\",\"Fjallraven Kanken\",\"Marc by Marc Jacobs\",\"VERA WANG\",\"Puressentiel\",\"Son & Park\",\"Laneige\",\"DKNY\",\"KIEHL'S\",\"Valentino\",\"LOEWE\",\"Armani Exchange\",\"Hoseki\",\"Kate Spade\",\"Tocco Tenero\",\"Yves Saint Laurent\",\"Carlo Rino\",\"Laura Mercier\",\"HUDA Beauty\",\"KLARITY\",\"Dickies\",\"Lifetherapy\",\"Paris Hilton\",\"alba BOTANICA\",\"Salt n Pepper\",\"Nike\",\"Espirit\",\"IKOU\",\"Marks & Spencer\",\"Betsey Johnson\",\"Stührling\",\"Stella McCartney\",\"LABIOTTE\",\"julia'r\",\"Tracce\",\"Lee Vierra\",\"Ingersoll Watch Company\",\"Guerlain\",\"Urban Decay\",\"Burberry\",\"MM6 MAISON MARGIELA\",\"Palmer's\",\"L.A. Girl\",\"Gerard Cosmetics\",\"Rebecca Minkoff\",\"M.R.K.T.\",\"QWSTION\",\"Palladium\",\"Zoya\",\"Michael Kors\",\"Casio Baby-G\",\"Vivienne Westwood\",\"Jurlique\",\"MIZZU\",\"Nixon\",\"Jean Paul GAULTIER\",\"bliss\",\"NOOKA\",\"JEANNE ARTHES\",\"John Varvatos\",\"Wristology\",\"Twemco\",\"Milani\",\"CREED\",\"GLASSHOUSE\",\"GARNIER\",\"Puma\",\"Jordana\",\"DOONEY & BOURKE\",\"Avène\",\"Lee Cooper\",\"S.T. Dupont\",\"MEDAVITA\",\"Mane 'n Tail\",\"Casio Edifice\",\"VICTORINOX\",\"LOVE MOSCHINO\",\"Hellolulu\",\"Batiste\",\"Alviero Martini\",\"Tissot\",\"Guess\",\"L'Occitane\",\"treaclemoon\",\"Lancaster Paris\",\"Ferrari\",\"L.A. Colors\",\"FOOT MEDI\",\"Kenzo\",\"Giffarine\",\"Aries Gold\",\"Victoria's Secret\",\"Samsonite\",\"THULE\",\"Deep Blue\",\"JOOP!\",\"FCUK\",\"Montblanc\",\"symbolize\",\"Kaminomoto\",\"Boots\",\"Olivia Burton\",\"Swatch\",\"Chanel\",\"NAUTICA\",\"JUSTIN BIEBER\",\"Timbuk2\",\"Diesel\",\"FOSSIL\",\"Zadig & Voltaire\",\"Sulwhasoo\",\"Aveda\",\"AQUOLINA\",\"Elizabeth Arden\",\"LACOSTE\",\"Etienne Aigner\",\"TSUBU\",\"Braun\",\"Mejikaliner\",\"b.liv\",\"Carl & Oak\",\"Clé de Peau\",\"LA MER\",\"Clarins\",\"LOLITA LEMPICKA\",\"Versace\",\"Anna Sui\",\"Q&Q\",\"Bonia\",\"Casio G-Shock\",\"Ecotools\",\"Antonio Banderas\",\"Panasonic\",\"BH Cosmetics\",\"Dove\",\"Bvlgari\",\"Pony Effect\",\"CRÈME SIMON\",\"Cellnique\",\"Innisfree\",\"Chloé\",\"ARMAF\",\"I'M MEME\",\"Charlotte Tilbury\",\"CHROME\",\"CLUSE\",\"Purbasari\",\"Oriental Princess\",\"Ikea\",\"DIOR\",\"Daniel Wellington\",\"Cure\",\"Calvin Klein\",\"PUPA\",\"CAROLINA HERRERA\",\"JĀSÖN\",\"AFNAN\",\"Gres Cabotine\",\"Paco Rabanne\",\"Everbest\",\"Essie\",\"LA Splash Cosmetics\",\"Arnette\",\"NYX Cosmetics\",\"Clinique\",\"Givenchy\",\"Becca\",\"SHISEIDO\",\"APRILSKIN\",\"Freewaters\",\"L'Oréal\",\"Giorgio Armani\",\"Jeffree Star Cosmetics\",\"Marshal\",\"ORIGINS\",\"KANEBO\",\"Sebamed\",\"TONYMOLY\",\"Deonatulle\",\"Bottega Veneta\",\"Issey Miyake\",\"Aer\",\"Ermenegildo Zegna\",\"Odbo\",\"Palmolive\",\"NUXE\",\"REVLON\",\"Ice Watch\",\"Kleancolor\",\"RESHOEVN8R\",\"Dolce & Gabbana\",\"Salvatore Ferragamo\"]
+                });" section nil nil [28550 314920])
+            ("CommandForUI.when('m-filter-desktop').execute(function(m_filter_desktop) {});" section nil nil [314920 321400])
+            ("CommandForUI.format(\"c-product-refine\", {
+        // this is for populating the filter module
+        \"container\" : '.off-canvas-wrap',
+        \"appendAreaId\" : '#products-append',
+        \"productOverlayId\" : '#product-list-overlay',
+        \"sortContainerId\" : '#sort-filter-main',
+        \"sortFilterWrapperClass\" : '.refine__content',
+        \"sortContainerClass\" : '.sort-filter__sort-list',
+        \"sortOverlay\" : '.sort-filter__sortby',
+        \"filterOpenId\" : \"#filter-open\",
+        \"sortIcons\" : '.sort-icon',
+        
+                \"tabBarClass\": '.tdesktop-header',
+                \"offset\" : 50,
+            
+        
+                \"after\": 50,
+            
+        \"url\": \"/api/v1/scroll/top_level_category/byId/M\",
+        \"rootElmId\" : \"#app-filter\",
+        
+
+     
+
+     \"sortType\": \"popular\" 
+ 
+
+
+    });" section (:members 
+              ( ("3,120 THB" anchor nil nil [322668 322671])
+                ("472 THB" anchor nil nil [324229 324232])
+                ("229 THB" anchor nil nil [325803 325806])
+                ("4,290 THB" anchor nil nil [327358 327361])
+                ("1,890 THB" anchor nil nil [328875 328878])
+                ("690 THB" anchor nil nil [330414 330417])
+                ("370 THB" anchor nil nil [331910 331913])
+                ("490 THB" anchor nil nil [333383 333386])
+                ("580 THB" anchor nil nil [334877 334880])
+                ("4,290 THB" anchor nil nil [336393 336396])
+                ("5,900 THB" anchor nil nil [337908 337911])
+                ("590 THB" anchor nil nil [339452 339455])
+                ("1,090 THB" anchor nil nil [340940 340943])
+                ("499 THB" anchor nil nil [342452 342455])
+                ("1,049 THB" anchor nil nil [343997 344000])
+                ("550 THB" anchor nil nil [345529 345532])
+                ("280 THB" anchor nil nil [347036 347039])
+                ("399 THB" anchor nil nil [348556 348559])
+                ("4,590 THB" anchor nil nil [350044 350047])
+                ("370 THB" anchor nil nil [351561 351564])
+                ("429 THB" anchor nil nil [353033 353036])
+                ("1,990 THB" anchor nil nil [354527 354530])
+                ("5,900 THB" anchor nil nil [356087 356090])
+                ("690 THB" anchor nil nil [357625 357628])
+                ("590 THB" anchor nil nil [359153 359156])
+                ("1,690 THB" anchor nil nil [360657 360660])
+                ("449 THB" anchor nil nil [362188 362191])
+                ("472 THB" anchor nil nil [363713 363716])
+                ("1,090 THB" anchor nil nil [365272 365275])
+                ("540 THB" anchor nil nil [366822 366825])
+                ("490 THB" anchor nil nil [368315 368318])
+                ("890 THB" anchor nil nil [369811 369814])
+                ("4,590 THB" anchor nil nil [371342 371345])
+                ("750 THB" anchor nil nil [372865 372868])
+                ("699 THB" anchor nil nil [374359 374362])
+                ("590 THB" anchor nil nil [375884 375887])
+                ("5,400 THB" anchor nil nil [377396 377399])
+                ("4,490 THB" anchor nil nil [378939 378942])
+                ("5,400 THB" anchor nil nil [380454 380457])
+                ("449 THB" anchor nil nil [381967 381970])
+                ("550 THB" anchor nil nil [383489 383492])
+                ("790 THB" anchor nil nil [385021 385024])
+                ("449 THB" anchor nil nil [386519 386522])
+                ("15,000 THB" anchor nil nil [388030 388033])
+                ("872 THB" anchor nil nil [389538 389541])
+                ("1,090 THB" anchor nil nil [391130 391133])
+                ("872 THB" anchor nil nil [392656 392659])
+                ("279 THB" anchor nil nil [394248 394251])
+                ("4,590 THB" anchor nil nil [395809 395812])
+                ("872 THB" anchor nil nil [397330 397333]))              ) nil [321400 399108])
+            ("CommandForUI.when('m-analytics').execute(function(analytics) {
+            analytics.topLevelCategoryViewed();
+        });" section nil nil [399108 399267])
+            ("CommandForUI.load.js('/assets/javascripts/3b8cc131741d6dc93072f85f5e8e9e66-base.js');" section (:members 
+              ( ("Returns Policy" anchor nil nil [404648 404651])
+                ("Privacy Policy" anchor nil nil [404813 404816])
+                ("Terms of Use" anchor nil nil [404975 404978])
+                ("On Facebook" anchor nil nil [405600 405603])
+                ("contact@zilingo.com" anchor nil nil [405746 405749])
+                ("Sell on Zilingo" anchor nil nil [406339 406342])
+                ("Buy Wholesale" anchor nil nil [406504 406507]))              ) nil [399267 407967])
+            ("CommandForUI.when(\"$\").execute(function(){CommandForUI.register(\"u-switch-locale\",function(){return{submit:function(t){var a=$(\"#switch-locale-form\");$('[name=\"locale\"]',a).val($(t.target).attr(\"data-locale\")),$('[name=\"currentUrl\"]',a).val(window.location.href),a.submit()}}})});" section nil nil [407967 408278])
+            ("window.ZILINGO = window.ZILINGO || {};
+            ZILINGO.lazyLoadEnabled =  true ;
+
+            
+            CommandForUI.format('c-zendesk-chat', {
+            	isEnable: true,
+                isDesktop: true,
+                language: 'en',
+                setDepartment : \"Thailand Customer Care\"
+            });" section nil nil [408278 408815])
+            ("(function () {
+            var user = {\"userRegion\":\"THA\",\"localeCode\":\"en\",\"client\":\"Web\",\"version\":\"8.0.0\"};
+            CommandForUI.format('c-analytics', {
+                google: \"UA-73457576-1\",
+                facebook: \"889822904400451\",
+                criteo: {
+                    accountId: \"29603\",
+                    hashedUserId: [\"\"],
+                    clientType: \"d\",
+                    isEnabled: true
+                },
+                steelHouse: {
+                    accountId: \"15703\",
+                    isEnabled: true
+                },
+                cleverTap: \"4W9-597-644Z\",
+                ematics: {
+                    isEnabled: true,
+                    ematicApikey: '1b1cc892780311e796c00242ac110002-sg4',
+                    opt: {\"country_iso\":\"THA\",\"currency_iso\":\"THB\",\"language_iso\":\"en\"}
+                },
+                iprice: {
+                    isEnabled: true,
+                    accountId: \"1477\"
+                },
+                shopback: {
+                    isEnabled: true,
+                    accountId: \"1374\"
+                },
+                involveAsia: {
+                    isEnabled: true,
+                    accountId: \"1230\"
+                },
+                gtm: {
+                    isEnabled: true,
+                    accountId: \"GTM-WCT3PWX\"
+                },
+                user: user
+            });
+
+
+            
+            CommandForUI.when('m-analytics').execute(function (analytics) {
+                analytics.pageView();
+            });
+        })();" section nil nil [408815 410421])
+            ("if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                        return false;
+                    }).catch(function(err) {
+                        return false;
+                    });
+                });
+            }
+
+
+            CommandForUI.when('m-analytics').execute(function(m_analytics) {
+                window.addEventListener('beforeinstallprompt', function(e) {
+
+                     m_analytics.androidBannerAd(false);
+
+                     e.userChoice.then(function(choiceResult) {
+
+                        if(choiceResult.outcome == 'dismissed') {
+                            m_analytics.androidBannerAd(false);
+                            console.log('User cancelled home screen install');
+                        }
+                        else {
+                            m_analytics.androidBannerAd(true);
+                            console.log('User added to home screen');
+                        }
+                    });
+                });
+            });" section nil nil [410421 411904]))          
+      :file "Men"
+      :pointmax 411904
+      :fsize 414134
+      :lastmodtime '(23049 15976 209321 383000)
+      :unmatched-syntax nil))
+  :file "!home!talos!coding!radek!sites!zilingo.com!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

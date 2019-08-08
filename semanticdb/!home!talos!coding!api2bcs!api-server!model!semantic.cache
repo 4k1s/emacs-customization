@@ -1,0 +1,77 @@
+;; Object model/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "model/"
+  :tables
+  (list
+    (semanticdb-table "dbInit.py"
+      :file "dbInit.py"
+      :fsize 60
+      :lastmodtime '(23176 8795 0 0))
+    (semanticdb-table "UserInfo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("model.dbInit" include nil nil [1 28])
+            ("userInfo" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("__tablename__" variable nil (reparse-symbol indented_block_body) [60 90])
+                    ("id" variable nil (reparse-symbol indented_block_body) [95 139])
+                    ("user_name" variable nil (reparse-symbol indented_block_body) [144 180])
+                    ("password" variable nil (reparse-symbol indented_block_body) [185 221])
+                    ("f_name" variable nil (reparse-symbol indented_block_body) [226 259])
+                    ("l_name" variable nil (reparse-symbol indented_block_body) [264 297])
+                    ("email" variable nil (reparse-symbol indented_block_body) [302 347])
+                    ("country" variable nil (reparse-symbol indented_block_body) [352 386])
+                    ("phone" variable nil (reparse-symbol indented_block_body) [391 423])
+                    ("userstatus" variable nil (reparse-symbol indented_block_body) [428 464])
+                    ("user_uuid" variable nil (reparse-symbol indented_block_body) [469 499])
+                    ("neo_address" variable nil (reparse-symbol indented_block_body) [504 542])
+                    ("eth_address" variable nil (reparse-symbol indented_block_body) [547 585])
+                    ("bcs_address" variable nil (reparse-symbol indented_block_body) [590 628])
+                    ("bcs_amount" variable nil (reparse-symbol indented_block_body) [633 665])
+                    ("eth_amount" variable nil (reparse-symbol indented_block_body) [670 702])
+                    ("neo_amount" variable nil (reparse-symbol indented_block_body) [707 739])
+                    ("created_at" variable nil (reparse-symbol indented_block_body) [744 779])
+                    ("updated_at" variable nil (reparse-symbol indented_block_body) [784 819])
+                    ("gauthen" variable nil (reparse-symbol indented_block_body) [824 855])
+                    ("user_image_path" variable nil (reparse-symbol indented_block_body) [860 902])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [925 929]))                          )
+                        (reparse-symbol indented_block_body) [912 1017])
+                    ("toDataAll" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1040 1044]))                          )
+                        (reparse-symbol indented_block_body) [1026 2553])
+                    ("toUserData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2577 2581]))                          )
+                        (reparse-symbol indented_block_body) [2562 3148])
+                    ("show_user_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3176 3180]))                          )
+                        (reparse-symbol indented_block_body) [3157 3803])
+                    ("show_ico" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3825 3829]))                          )
+                        (reparse-symbol indented_block_body) [3812 4214])
+                    ("show_wallet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4239 4243]))                          )
+                        (reparse-symbol indented_block_body) [4223 4628]))                  
+                :type "class")
+                nil [30 4628]))          
+      :file "UserInfo.py"
+      :pointmax 4633
+      :fsize 4766
+      :lastmodtime '(23177 4388 0 0)
+      :unmatched-syntax nil))
+  :file "!home!talos!coding!api2bcs!api-server!model!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

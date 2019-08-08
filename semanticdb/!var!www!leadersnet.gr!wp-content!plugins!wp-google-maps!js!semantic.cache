@@ -1,0 +1,33 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "wpgmaps.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("marker_icon1" variable (:default-value "'../wp-content/themes/search-and-go/assets/img/marker1.png'") nil [2 79])
+            ("marker_icon2" variable (:default-value "''") nil [80 100])
+            ("InitMap" function nil nil [725 1265])
+            ("add_polygon" function (:arguments 
+              ( ("polygonid" variable nil (reparse-symbol FormalParameterList) [25075 25084]))              ) nil [25054 26920])
+            ("add_polyline" function (:arguments 
+              ( ("polyline" variable nil (reparse-symbol FormalParameterList) [26943 26951]))              ) nil [26921 28087])
+            ("autocomplete" variable nil nil [28253 28270])
+            ("fillInAddress" function nil nil [28271 28395])
+            ("searchLocations" function (:arguments 
+              ( ("map_id" variable nil (reparse-symbol FormalParameterList) [30150 30156]))              ) nil [30125 31160])
+            ("clearLocations" function nil nil [31161 31214])
+            ("searchLocationsNear" function (:arguments 
+              ( ("mapid" variable nil (reparse-symbol FormalParameterList) [31244 31249])
+                ("center_searched" variable nil (reparse-symbol FormalParameterList) [31250 31265]))              ) nil [31215 32739])
+            ("toRad" function (:arguments 
+              ( ("Value" variable nil (reparse-symbol FormalParameterList) [32756 32761]))              ) nil [32741 32847]))          
+      :file "wpgmaps.js"
+      :pointmax 32848
+      :fsize 32847
+      :lastmodtime '(22803 15698 494501 756000)
+      :unmatched-syntax nil))
+  :file "!var!www!leadersnet.gr!wp-content!plugins!wp-google-maps!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,26 @@
+;; Object index/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "index/"
+  :tables
+  (list
+    (semanticdb-table "index.volt"
+      :major-mode 'html-mode
+      :tags 
+        '( ("{% include \"layouts/sidebar.volt\" %}
+
+        <!-- Page Content -->
+        <div id=\"page-content-wrapper\">
+            <div class=\"container-fluid\">
+                <h1>Simple Sidebar" section (:members 
+              ( ("Simple Sidebar" section nil nil [303 998]))              ) nil [70 998])
+            ("" section nil nil [998 1179])
+            ("" section nil nil [1179 1385])
+            ("" section nil nil [1385 1633]))          
+      :file "index.volt"
+      :pointmax 1633
+      :fsize 1632
+      :lastmodtime '(23050 55933 810130 648000)
+      :unmatched-syntax nil))
+  :file "!var!www!asl!app!views!index!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

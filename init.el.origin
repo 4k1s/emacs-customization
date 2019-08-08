@@ -1,0 +1,136 @@
+;; full screen
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#000000" "#8b0000" "#00ff00" "#ffa500" "#7b68ee" "#dc8cc3" "#93e0e3" "#dcdccc"])
+ '(custom-safe-themes
+   (quote
+    ("9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" "71ecffba18621354a1be303687f33b84788e13f40141580fa81e7840752d31bf" "45712b65018922c9173439d9b1b193cb406f725f14d02c8c33e0d2cdad844613" default)))
+ '(ecb-options-version "2.40")
+ '(fci-rule-color "#383838")
+ '(inhibit-startup-screen t)
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+;; adding packages MELP and Marmalade
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; load theme on start up
+(add-hook 'after-init-hook (lambda () (load-theme 'wheatgrass)))
+
+;; web-mode
+
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\.twig\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+(setq web-mode-engines-alist
+      '(("php"    . "\\.phtml\\'")
+	("php"    . "\\.tpl\\'")
+	("blade"  . "\\.blade\\."))        
+  )
+
+(eval-after-load 'php-mode
+  '(require 'php-ext))
+
+;; php-mode
+(add-hook 'php-mode-hook
+            '(lambda ()
+               (auto-complete-mode t)
+               (require 'ac-php)
+              ;;  (setq ac-sources '(ac-source-php ) )
+	       (setq ac-sources '(ac-source-words-in-all-buffer ac-source-php))
+               (yas-global-mode 1)
+               (define-key php-mode-map  (kbd "C-]") 'ac-php-find-symbol-at-point)   ;goto define
+               (define-key php-mode-map  (kbd "C-t") 'ac-php-location-stack-back   ) ;go back
+               ))
+;;(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\'" . php-mode))
+
+;; auto-complete
+(setq ac-auto-start t)
+(setq ac-auto-show-menu 0.6)
+(setq-default ac-sources '(ac-source-words-in-all-buffer))
+
+
+;; don't open another window on start up
+(setq inhibit-startup-screen t)
+
+;; CEDET
+(semantic-mode 1)
+;; EDE
+(global-ede-mode 1)
+
+;; ECB
+(setq stack-trace-on-error t)
+(add-to-list 'load-path  "~/.emacs.d/elpa/ecb-2.40")
+(require 'ecb)
+(setq ecb-version-check nil)
+(setq ecb-tip-of-the-day nil)
+(ecb-activate)
+(kill-buffer "*info*")
+;; YASnippet
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+(global-set-key (kbd "C-q") 'yas-expand)
+
+;; ECB navigate windows with hot keys
+
+(global-set-key (kbd "C-0") 'ecb-goto-window-directories)
+(global-set-key (kbd "C-1") 'ecb-goto-window-sources)
+(global-set-key (kbd "C-2") 'ecb-goto-window-methods)
+(global-set-key (kbd "C-3") 'ecb-goto-window-history)
+(global-set-key (kbd "C-`") 'ecb-goto-window-edit1)
+
+;; kill scratch buffer
+(delete-other-windows)
+
+;; Open split shell on launch
+(add-hook 'emacs-startup-hook
+  (lambda ()
+    (let ((w (split-window-below 2)))
+      (select-window w)
+      (shell))
+      (switch-to-buffer "*shell*")
+      (shrink-window-if-larger-than-buffer)
+      (ecb-goto-window-edit1)))
+
+;; On exit
+(defadvice term-handle-exit
+  (after term-kill-buffer-on-exit activate)
+(kill-buffer "*shell*"))
+
+;; don't ask for killing shell proccess
+(require 'cl-lib)
+(defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
+  "Prevent annoying \"Active processes exist\" query when you quit Emacs."
+  (cl-letf (((symbol-function #'process-list) (lambda ())))
+    ad-do-it))
+
+;; python auto-complete and goodies
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+(add-hook 'python-mode-hook 'ac-anaconda-setup)
+
+;; can add paths
+;; (add-to-list 'python-shell-extra-pythonpaths "/path/to/the/project")
+;; (add-to-list 'python-shell-extra-pythonpaths "/path/to/the/dependency")
+
+;; default starting directory
+(setq default-directory "~/localhost/wgr/projects/")
+
+(global-set-key (kbd "C-q") 'auto-complete-mode) ; Ctrl+q for auto-complete-mode

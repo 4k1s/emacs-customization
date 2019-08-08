@@ -1,0 +1,16 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "custom.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "custom.js"
+      :pointmax 65
+      :fsize 68
+      :lastmodtime '(22879 6239 871265 159000)
+      :unmatched-syntax '((PAREN_BLOCK 18 . 63) (DOT 12 . 13) (PAREN_BLOCK 2 . 12) (PAREN_BLOCK 18 . 88) (DOT 12 . 13) (PAREN_BLOCK 2 . 12) (PAREN_BLOCK 18 . 91) (DOT 12 . 13) (PAREN_BLOCK 2 . 12))))
+  :file "!var!www!studiorigas.eu!upload!catalog!view!theme!diceylook!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

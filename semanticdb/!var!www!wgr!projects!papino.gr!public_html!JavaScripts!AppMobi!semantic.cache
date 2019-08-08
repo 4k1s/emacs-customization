@@ -1,0 +1,18 @@
+;; Object AppMobi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AppMobi/"
+  :tables
+  (list
+    (semanticdb-table "22.ShopProduct.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("ShopProduct" function nil nil [14 9150])
+            ("ProductSlider" function nil nil [9152 12829]))          
+      :file "22.ShopProduct.js"
+      :pointmax 12830
+      :fsize 13262
+      :lastmodtime '(23023 21890 954666 365000)
+      :unmatched-syntax nil))
+  :file "!var!www!wgr!projects!papino.gr!public_html!JavaScripts!AppMobi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

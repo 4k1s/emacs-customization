@@ -1,0 +1,38 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "header.tpl"
+      :major-mode 'html-mode
+      :tags 
+        '( ("?>" section nil nil [116 522])
+            ("?>" section nil nil [522 612])
+            ("?>" section nil nil [612 887])
+            ("?>" section nil nil [887 982])
+            ("?>" section nil nil [982 1642])
+            ("?>" section nil nil [1642 1756])
+            ("?>" section nil nil [1756 1845])
+            ("?>" section (:members 
+              ( ("?>" anchor nil nil [2099 2102])
+                ("?>" anchor nil nil [2807 2810])
+                ("?>" anchor nil nil [3042 3045])
+                ("?>" anchor nil nil [3231 3234])
+                ("?>" anchor nil nil [3497 3500])
+                ("?>" anchor nil nil [3659 3662])
+                ("?>" anchor nil nil [3939 3942])
+                ("?>" anchor nil nil [4101 4104])
+                ("?>" anchor nil nil [4368 4371])
+                ("?>" anchor nil nil [4848 4851])
+                ("?>" anchor nil nil [5233 5236])
+                ("?>" anchor nil nil [5334 5337])
+                ("?>" anchor nil nil [5441 5444])
+                ("?>" anchor nil nil [5561 5564]))              ) nil [1845 5750]))          
+      :file "header.tpl"
+      :pointmax 5750
+      :fsize 5749
+      :lastmodtime '(22793 20150 737964 790000)
+      :unmatched-syntax nil))
+  :file "!var!www!opencart!shoeshop!admin!view!template!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

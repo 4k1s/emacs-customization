@@ -1,0 +1,16 @@
+;; Object gandi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gandi/"
+  :tables
+  (list
+    (semanticdb-table "test.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "test.js"
+      :pointmax 23
+      :fsize 22
+      :lastmodtime '(22773 42605 55855 961000)
+      :unmatched-syntax '(($EOI 11 . 11))))
+  :file "!home!talos!coding!Nodejs!diktys!gandi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object nw/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nw/"
+  :tables
+  (list
+    (semanticdb-table "webpack.mix.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "webpack.mix.js"
+      :pointmax 556
+      :fsize 555
+      :lastmodtime '(22787 47150 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 506 . 554) (DOT 501 . 502) (VARIABLE 448 . 451) (PAREN_BLOCK 454 . 497) (PAREN_BLOCK 24 . 39) (BRACE_BLOCK 7 . 14) (ASSIGN_SYMBOL 15 . 16))))
+  :file "!var!www!nw!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

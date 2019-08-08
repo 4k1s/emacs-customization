@@ -1,0 +1,22 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "clock.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("getCountDown" function (:arguments 
+              ( ("cdate" variable nil (reparse-symbol FormalParameterList) [23 28]))              ) nil [1 1315])
+            ("initNumbers" function nil nil [1317 1714])
+            ("scaleCoordinates" function (:arguments 
+              ( ("delta" variable nil (reparse-symbol FormalParameterList) [1742 1747])
+                ("firstTime" variable nil (reparse-symbol FormalParameterList) [1749 1758]))              ) nil [1716 2608]))          
+      :file "clock.js"
+      :pointmax 3964
+      :fsize 4102
+      :lastmodtime '(22699 12193 529673 480000)
+      :unmatched-syntax '((PAREN_BLOCK 2628 . 3961) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3961) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3960) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3961) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3960) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3960) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3961) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3961) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622) (PAREN_BLOCK 2628 . 3960) (DOT 2622 . 2623) (VARIABLE 2611 . 2612) (PAREN_BLOCK 2612 . 2622))))
+  :file "!var!www!leadersnet.gr!clock!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

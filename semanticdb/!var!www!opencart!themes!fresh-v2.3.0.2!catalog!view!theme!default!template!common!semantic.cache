@@ -1,0 +1,53 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "header.tpl"
+      :major-mode 'html-mode
+      :tags 
+        '( ("" section nil nil [524 802])
+            ("" section nil nil [802 1004])
+            ("" section nil nil [1004 1596])
+            ("" section nil nil [1596 1845])
+            ("?>
+<?php foreach ($analytics as $analytic) { ?>
+<?php echo $analytic; ?>
+<?php } ?>" section nil nil [1845 2015])
+            ("" section (:members 
+              ( ("" anchor nil nil [2242 2245])
+                ("" anchor nil nil [2419 2422])
+                ("else { ?>
+            <li><a href=\"<?php echo $register; ?>\"><?php echo $text_register; ?>" anchor nil nil [2785 2788])
+                ("else { ?>
+            <li><a href=\"<?php echo $register; ?>\"><?php echo $text_register; ?>" anchor nil nil [2873 2876])
+                ("else { ?>
+            <li><a href=\"<?php echo $register; ?>\"><?php echo $text_register; ?>" anchor nil nil [2957 2960])
+                ("else { ?>
+            <li><a href=\"<?php echo $register; ?>\"><?php echo $text_register; ?>" anchor nil nil [3053 3056])
+                ("else { ?>
+            <li><a href=\"<?php echo $register; ?>\"><?php echo $text_register; ?>" anchor nil nil [3143 3146])
+                ("?>" anchor nil nil [3259 3262])
+                ("?>" anchor nil nil [3349 3352])
+                ("" anchor nil nil [3482 3485])
+                ("" anchor nil nil [3705 3708])
+                ("" anchor nil nil [3931 3934])
+                ("else { ?>
+          <h1><a href=\"<?php echo $home; ?>\"><?php echo $name; ?>" anchor nil nil [4313 4316])
+                ("?>" section (:members 
+                  ( ("?>" anchor nil nil [4504 4507])
+                    ("else { ?>
+        <li><a href=\"<?php echo $category['href']; ?>\"><?php echo $category['name']; ?>" anchor nil nil [5351 5354])
+                    ("?>" anchor nil nil [5816 5819])
+                    ("else { ?>
+        <li><a href=\"<?php echo $category['href']; ?>\"><?php echo $category['name']; ?>" anchor nil nil [5998 6001])
+                    ("?>
+        <?php } ?>" anchor nil nil [6178 6181]))                  ) nil [4500 6351]))              ) nil [2015 6351]))          
+      :file "header.tpl"
+      :pointmax 6351
+      :fsize 6468
+      :lastmodtime '(22431 20543 0 0)
+      :unmatched-syntax nil))
+  :file "!var!www!opencart!themes!fresh-v2.3.0.2!catalog!view!theme!default!template!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

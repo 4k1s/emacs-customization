@@ -1,0 +1,46 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "main.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("formValidation" function (:arguments 
+              ( ("form" variable nil (reparse-symbol FormalParameterList) [5004 5008]))              ) nil [4980 5425])
+            ("showErrors" function (:arguments 
+              ( ("form" variable nil (reparse-symbol FormalParameterList) [5471 5475])
+                ("errors" variable nil (reparse-symbol FormalParameterList) [5477 5483]))              ) nil [5451 6041]))          
+      :file "main.js"
+      :pointmax 6042
+      :fsize 6063
+      :lastmodtime '(22699 13643 233641 990000)
+      :unmatched-syntax nil)
+    (semanticdb-table "graphs.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("container" variable nil nil [739 753])
+            ("renderer" variable nil nil [756 783])
+            ("scene" variable nil nil [768 773])
+            ("camera" variable nil nil [760 784])
+            ("material" variable nil nil [787 815])
+            ("geometry" variable nil nil [797 805])
+            ("mesh" variable nil nil [791 816])
+            ("mouseY" variable (:default-value "0") nil [819 845])
+            ("mouseX" variable (:default-value "0") nil [823 846])
+            ("windowHalfX" variable (:default-value "window") nil [880 920])
+            ("windowHalfY" variable (:default-value "window") nil [923 964])
+            ("init" function nil nil [977 3392])
+            ("onDocumentMouseMove" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [3425 3430]))              ) nil [3396 3545])
+            ("onWindowResize" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [3573 3578]))              ) nil [3549 3749])
+            ("animate" function nil nil [3753 4090]))          
+      :file "graphs.js"
+      :pointmax 4092
+      :fsize 4091
+      :lastmodtime '(22700 25192 206977 740000)
+      :unmatched-syntax nil))
+  :file "!var!www!leadersnet.gr!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

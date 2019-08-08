@@ -1,0 +1,18 @@
+;; Object views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "views/"
+  :tables
+  (list
+    (semanticdb-table "index.volt"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Phalcon PHP Framework" section nil nil [43 96])
+            ("{{ content() }}" section nil nil [96 146]))          
+      :file "index.volt"
+      :pointmax 146
+      :fsize 145
+      :lastmodtime '(22680 12635 269934 405000)
+      :unmatched-syntax nil))
+  :file "!var!www!codersvault.com.dev!app!views!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

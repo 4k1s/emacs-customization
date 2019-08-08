@@ -1,0 +1,20 @@
+;; Object codility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "codility/"
+  :tables
+  (list
+    (semanticdb-table "demo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("listsum" function (:arguments 
+              ( ("List" variable nil (reparse-symbol function_parameters) [13 17]))              ) nil [1 75])
+            ("solution" function (:arguments 
+              ( ("A" variable nil (reparse-symbol function_parameters) [89 90]))              ) nil [76 486]))          
+      :file "demo.py"
+      :pointmax 490
+      :fsize 489
+      :lastmodtime '(22821 18230 719191 66000)
+      :unmatched-syntax nil))
+  :file "!home!talos!coding!codility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

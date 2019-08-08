@@ -1,0 +1,17 @@
+;; Object AppMobi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AppMobi/"
+  :tables
+  (list
+    (semanticdb-table "11.Menu.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("Menu" function nil nil [14 786]))          
+      :file "11.Menu.js"
+      :pointmax 787
+      :fsize 786
+      :lastmodtime '(23021 45503 620724 290000)
+      :unmatched-syntax nil))
+  :file "!var!www!wgr!projects!moreshop!public_html!JavaScripts!AppMobi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

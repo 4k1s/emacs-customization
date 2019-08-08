@@ -1,0 +1,16 @@
+;; Object API/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "API/"
+  :tables
+  (list
+    (semanticdb-table "api-phalcon-micro.postman_collection.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "api-phalcon-micro.postman_collection.json"
+      :pointmax 12234
+      :fsize 12235
+      :lastmodtime '(23045 31309 377724 129000)
+      :unmatched-syntax nil))
+  :file "!var!www!radek!API!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

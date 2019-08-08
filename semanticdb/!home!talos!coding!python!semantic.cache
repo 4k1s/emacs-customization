@@ -1,0 +1,57 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hashlib" include nil nil [1 15])
+            ("t" variable nil nil [17 29])
+            ("hash" variable nil nil [30 53])
+            ("hash" code nil nil [54 68])
+            ("print" code nil nil [69 91]))          
+      :file "test.py"
+      :pointmax 92
+      :fsize 91
+      :lastmodtime '(23001 44001 530363 12000)
+      :unmatched-syntax '((NAME 93 . 97) ($EOI 100 . 100) (NAME 93 . 97) ($EOI 98 . 98)))
+    (semanticdb-table "mylibrary.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("test_func" function nil nil [16 64])
+            ("test_func2" function nil nil [65 114]))          
+      :file "mylibrary.py"
+      :pointmax 114
+      :fsize 113
+      :lastmodtime '(23001 49979 540376 835000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("mylibrary" include nil nil [1 38])
+            ("tf" code nil nil [40 44]))          
+      :file "run.py"
+      :pointmax 46
+      :unmatched-syntax nil)
+    (semanticdb-table "kNN.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 20])
+            ("operator" include nil nil [21 36])
+            ("createDataset" function nil nil [38 167])
+            ("classify0" function (:arguments 
+              ( ("inX" variable nil (reparse-symbol function_parameters) [182 185])
+                ("dataSet" variable nil (reparse-symbol function_parameters) [187 194])
+                ("labels" variable nil (reparse-symbol function_parameters) [196 202])
+                ("k" variable nil (reparse-symbol function_parameters) [204 205]))              ) nil [168 727])
+            ("group, labels" code nil nil [728 759])
+            ("print" code nil nil [760 800]))          
+      :file "kNN.py"
+      :pointmax 801
+      :fsize 800
+      :lastmodtime '(23001 59984 239879 297000)
+      :unmatched-syntax '(($EOI 801 . 801))))
+  :file "!home!talos!coding!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

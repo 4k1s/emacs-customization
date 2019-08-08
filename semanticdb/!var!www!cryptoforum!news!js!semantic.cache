@@ -1,0 +1,24 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "getRates.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "getRates.js"
+      :pointmax 1125
+      :fsize 1124
+      :lastmodtime '(23119 22352 295062 15000)
+      :unmatched-syntax '((PAREN_BLOCK 7 . 1124) (PAREN_BLOCK 7 . 1171) (PAREN_BLOCK 7 . 1203) (PAREN_BLOCK 7 . 1197) (PAREN_BLOCK 7 . 958) (PAREN_BLOCK 7 . 953)))
+    (semanticdb-table "custom.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "custom.js"
+      :pointmax 1521
+      :fsize 1520
+      :lastmodtime '(23033 10699 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 1490 . 1498) (PAREN_BLOCK 1 . 1490))))
+  :file "!var!www!cryptoforum!news!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "ordering.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "ordering.js"
+      :pointmax 2286
+      :fsize 2285
+      :lastmodtime '(22518 33824 105573 645000)
+      :unmatched-syntax '((PAREN_BLOCK 1411 . 2284) (DOT 1405 . 1406) (VARIABLE 1395 . 1396) (PAREN_BLOCK 1396 . 1405) (PAREN_BLOCK 221 . 1356) (DOT 215 . 216) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 215) (FOR 117 . 120) (PAREN_BLOCK 121 . 137) (DOT 59 . 60) (PAREN_BLOCK 33 . 59) (PAREN_BLOCK 1411 . 2286) (DOT 1405 . 1406) (VARIABLE 1395 . 1396) (PAREN_BLOCK 1396 . 1405) (PAREN_BLOCK 221 . 1356) (DOT 215 . 216) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 215) (FOR 117 . 120) (PAREN_BLOCK 121 . 137) (DOT 59 . 60) (PAREN_BLOCK 33 . 59) (PAREN_BLOCK 1411 . 2284) (DOT 1405 . 1406) (VARIABLE 1395 . 1396) (PAREN_BLOCK 1396 . 1405) (PAREN_BLOCK 221 . 1356) (DOT 215 . 216) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 215) (FOR 117 . 120) (PAREN_BLOCK 121 . 137) (DOT 59 . 60) (PAREN_BLOCK 33 . 59) (PAREN_BLOCK 1411 . 2279) (DOT 1405 . 1406) (VARIABLE 1395 . 1396) (PAREN_BLOCK 1396 . 1405) (PAREN_BLOCK 221 . 1356) (DOT 215 . 216) (VARIABLE 207 . 208) (PAREN_BLOCK 208 . 215) (FOR 117 . 120) (PAREN_BLOCK 121 . 137) (DOT 59 . 60) (PAREN_BLOCK 33 . 59))))
+  :file "!var!www!railway!cts!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

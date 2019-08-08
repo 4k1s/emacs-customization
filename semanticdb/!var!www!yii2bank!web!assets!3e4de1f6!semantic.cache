@@ -1,0 +1,16 @@
+;; Object 3e4de1f6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "3e4de1f6/"
+  :tables
+  (list
+    (semanticdb-table "yii.activeForm.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "yii.activeForm.js"
+      :pointmax 32249
+      :fsize 32248
+      :lastmodtime '(22688 44638 763604 245000)
+      :unmatched-syntax '((PAREN_BLOCK 32232 . 32247) (PAREN_BLOCK 305 . 32232))))
+  :file "!var!www!yii2bank!web!assets!3e4de1f6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

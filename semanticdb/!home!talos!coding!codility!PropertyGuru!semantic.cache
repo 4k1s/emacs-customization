@@ -1,0 +1,17 @@
+;; Object PropertyGuru/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PropertyGuru/"
+  :tables
+  (list
+    (semanticdb-table "task1.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("solution" function nil nil [147 349]))          
+      :file "task1.js"
+      :pointmax 350
+      :fsize 349
+      :lastmodtime '(22825 43407 564672 514000)
+      :unmatched-syntax nil))
+  :file "!home!talos!coding!codility!PropertyGuru!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

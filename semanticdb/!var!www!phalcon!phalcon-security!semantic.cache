@@ -1,0 +1,16 @@
+;; Object phalcon-security/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "phalcon-security/"
+  :tables
+  (list
+    (semanticdb-table "composer.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "composer.json"
+      :pointmax 67
+      :fsize 66
+      :lastmodtime '(22874 40812 747577 666000)
+      :unmatched-syntax nil))
+  :file "!var!www!phalcon!phalcon-security!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

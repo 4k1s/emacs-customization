@@ -1,0 +1,38 @@
+;; Object App/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "App/"
+  :tables
+  (list
+    (semanticdb-table "16.Newsfeeds.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("Newsfeeds" function nil nil [14 2335]))          
+      :file "16.Newsfeeds.js"
+      :pointmax 2336
+      :fsize 2335
+      :lastmodtime '(22893 22026 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "04.Zooming.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("Zooming" function nil nil [1 658])
+            ("ViewZoom" function (:arguments 
+              ( ("$obj" variable nil (reparse-symbol FormalParameterList) [678 682]))              ) nil [660 4344]))          
+      :file "04.Zooming.js"
+      :pointmax 4345
+      :fsize 4344
+      :lastmodtime '(23074 30293 764421 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "22.ShopProduct.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("ShopProduct" function nil nil [14 9418])
+            ("ProductSlider" function nil nil [9420 14179]))          
+      :file "22.ShopProduct.js"
+      :pointmax 14180
+      :fsize 14612
+      :lastmodtime '(22938 43632 0 0)
+      :unmatched-syntax nil))
+  :file "!var!www!wgr!projects!moreshop!public_html!JavaScripts!App!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

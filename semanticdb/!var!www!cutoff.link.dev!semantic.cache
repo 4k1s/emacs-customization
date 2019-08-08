@@ -1,0 +1,16 @@
+;; Object cutoff.link.dev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cutoff.link.dev/"
+  :tables
+  (list
+    (semanticdb-table ".gitignore"
+      :major-mode 'html-mode
+      :tags nil
+      :file ".gitignore"
+      :pointmax 17
+      :fsize 16
+      :lastmodtime '(22403 39098 956306 282000)
+      :unmatched-syntax nil))
+  :file "!var!www!cutoff.link.dev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

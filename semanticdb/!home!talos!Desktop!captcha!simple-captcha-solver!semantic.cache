@@ -1,0 +1,45 @@
+;; Object simple-captcha-solver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "simple-captcha-solver/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [1 16])
+            ("captcha_decoder" include nil nil [17 52])
+            ("TestStringMethods" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("test_images" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [120 124]))                          )
+                        (reparse-symbol indented_block_body) [104 186]))                  
+                :type "class")
+                nil [55 195])
+            ("if" code nil nil [196 243]))          
+      :file "test.py"
+      :pointmax 243
+      :fsize 242
+      :lastmodtime '(23082 10734 383296 943000)
+      :unmatched-syntax nil)
+    (semanticdb-table "captcha_decoder.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("PIL" include nil nil [1 22])
+            ("sys" include nil nil [23 33])
+            ("decoder" function (:arguments 
+              ( ("im" variable nil (reparse-symbol function_parameters) [57 59])
+                ("threshold" variable nil (reparse-symbol function_parameters) [69 78])
+                ("mask" variable nil (reparse-symbol function_parameters) [92 96])
+                ("alphabet" variable nil (reparse-symbol function_parameters) [120 128]))              ) nil [36 2068])
+            ("if" code nil nil [2069 2128]))          
+      :file "captcha_decoder.py"
+      :pointmax 2128
+      :fsize 2127
+      :lastmodtime '(23082 10986 250703 8000)
+      :unmatched-syntax nil))
+  :file "!home!talos!Desktop!captcha!simple-captcha-solver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

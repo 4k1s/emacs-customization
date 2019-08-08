@@ -1,0 +1,22 @@
+;; Object whois/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "whois/"
+  :tables
+  (list
+    (semanticdb-table "uniregistry.com.phantom.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("domain" variable (:default-value "\"whatever\"") nil [51 73])
+            ("site" variable (:default-value "\"https://uniregistry.com/\"") nil [74 110])
+            ("ajax_url" variable (:default-value "\"\"") nil [111 127])
+            ("jq_url" variable (:default-value "\"libs/js/\"") nil [128 172])
+            ("max_runtime" variable (:default-value "100") nil [173 193])
+            ("agent" variable (:default-value "\"Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:10.0) Gecko/20100101 Firefox/10.0\"") nil [194 284]))          
+      :file "uniregistry.com.phantom.js"
+      :pointmax 955
+      :fsize 954
+      :lastmodtime '(22521 50564 913880 356000)
+      :unmatched-syntax '((VARIABLE 505 . 509) (VARIABLE 550 . 554) (PAREN_BLOCK 559 . 953) (VAR 479 . 482) (PAREN_BLOCK 501 . 503) (VARIABLE 392 . 398) (PAREN_BLOCK 409 . 458) (VAR 305 . 308) (PAREN_BLOCK 340 . 348) (VARIABLE 505 . 509) (VARIABLE 550 . 554) (PAREN_BLOCK 559 . 954) (VAR 479 . 482) (PAREN_BLOCK 501 . 503) (VARIABLE 392 . 398) (PAREN_BLOCK 409 . 458) (VAR 305 . 308) (PAREN_BLOCK 340 . 348) (VARIABLE 505 . 509) (VARIABLE 550 . 554) (PAREN_BLOCK 559 . 953) (VAR 479 . 482) (PAREN_BLOCK 501 . 503) (VARIABLE 392 . 398) (PAREN_BLOCK 409 . 458) (VAR 305 . 308) (PAREN_BLOCK 340 . 348))))
+  :file "!var!www!seo.style!app!tools!whois!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

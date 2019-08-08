@@ -1,0 +1,16 @@
+;; Object vendor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vendor/"
+  :tables
+  (list
+    (semanticdb-table "composer.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "composer.json"
+      :pointmax 355
+      :fsize 354
+      :lastmodtime '(23057 14035 654572 75000)
+      :unmatched-syntax nil))
+  :file "!home!talos!coding!radek!vendor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

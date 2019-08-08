@@ -1,0 +1,128 @@
+;; Object jump/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jump/"
+  :tables
+  (list
+    (semanticdb-table "SleepActivity.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.youhong.jump" package nil nil [1 26])
+            ("java.util.ArrayList" include nil nil [28 55])
+            ("java.util.Arrays" include nil nil [56 80])
+            ("com.youhong.j_style_Pro.calendar.CalendarData" include nil nil [82 135])
+            ("com.youhong.j_style_Pro.calendar.CalendarData.OnMonthChangeListener" include nil nil [136 211])
+            ("com.youhong.j_style_Pro.calendar.CalendarUtil" include nil nil [212 265])
+            ("com.youhong.j_style_Pro.entity.PedoMeter" include nil nil [266 314])
+            ("com.youhong.j_style_Pro.tool.SaveDataBase" include nil nil [315 364])
+            ("com.youhong.view.CharSleepView" include nil nil [365 403])
+            ("com.youhong.view.DataTabView" include nil nil [404 440])
+            ("com.youhong.view.DatelistAdapter" include nil nil [441 481])
+            ("com.youhong.view.RoundView" include nil nil [482 516])
+            ("com.youhong.view.SleepRoundGoalView" include nil nil [517 560])
+            ("android.app.Activity" include nil nil [562 590])
+            ("android.os.Bundle" include nil nil [591 616])
+            ("android.util.Log" include nil nil [617 641])
+            ("android.view.View" include nil nil [642 667])
+            ("android.widget.AdapterView" include nil nil [668 702])
+            ("android.widget.AdapterView.OnItemClickListener" include nil nil [703 757])
+            ("android.widget.LinearLayout" include nil nil [758 793])
+            ("android.widget.ListView" include nil nil [794 825])
+            ("android.widget.RelativeLayout" include nil nil [826 863])
+            ("android.widget.TextView" include nil nil [864 895])
+            ("SleepActivity" type
+               (:typemodifiers ("public")
+                :interfaces ("OnMonthChangeListener")
+                :superclasses "Activity"
+                :members 
+                  ( ("mPdemoMeter" variable
+                       (:typemodifiers ("private")
+                        :type "PedoMeter")
+                        (reparse-symbol class_member_declaration) [977 1007])
+                    ("apPedometer" variable
+                       (:typemodifiers ("private")
+                        :type "PedoMeter")
+                        (reparse-symbol class_member_declaration) [1013 1043])
+                    ("charView" variable
+                       (:typemodifiers ("private")
+                        :type "CharSleepView")
+                        (reparse-symbol class_member_declaration) [1049 1080])
+                    ("dayGoald" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1082 1103])
+                    ("mAdapter" variable
+                       (:typemodifiers ("private")
+                        :type "DatelistAdapter")
+                        (reparse-symbol class_member_declaration) [1105 1138])
+                    ("mCalendarData" variable
+                       (:typemodifiers ("private")
+                        :type "CalendarData")
+                        (reparse-symbol class_member_declaration) [1140 1175])
+                    ("mChar" variable
+                       (:typemodifiers ("private")
+                        :type "CharSleepView")
+                        (reparse-symbol class_member_declaration) [1177 1205])
+                    ("mListView" variable
+                       (:typemodifiers ("private")
+                        :type "ListView")
+                        (reparse-symbol class_member_declaration) [1207 1234])
+                    ("mRoundView" variable
+                       (:typemodifiers ("private")
+                        :type "RoundView")
+                        (reparse-symbol class_member_declaration) [1236 1265])
+                    ("ringText" variable
+                       (:typemodifiers ("private")
+                        :type "TextView")
+                        (reparse-symbol class_member_declaration) [1267 1293])
+                    ("ringText2" variable
+                       (:typemodifiers ("private")
+                        :type "TextView")
+                        (reparse-symbol class_member_declaration) [1295 1322])
+                    ("sleepDataLayout" variable
+                       (:typemodifiers ("private")
+                        :type "LinearLayout")
+                        (reparse-symbol class_member_declaration) [1324 1361])
+                    ("sleepYearAndMonth" variable
+                       (:typemodifiers ("private")
+                        :type "LinearLayout")
+                        (reparse-symbol class_member_declaration) [1363 1402])
+                    ("sleepCharLayout" variable
+                       (:typemodifiers ("private")
+                        :type "LinearLayout")
+                        (reparse-symbol class_member_declaration) [1404 1441])
+                    ("sleepRoundLayout" variable
+                       (:typemodifiers ("private")
+                        :type "RelativeLayout")
+                        (reparse-symbol class_member_declaration) [1443 1483])
+                    ("onCreate" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [1521 1546]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1497 1680])
+                    ("initView" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1683 2777])
+                    ("onClikcItem" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2780 4554])
+                    ("getDefaultData" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4595 5819])
+                    ("onMonthChange" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5833 5990]))                  
+                :type "class")
+                nil [897 5992]))          
+      :file "SleepActivity.java"
+      :pointmax 5993
+      :fsize 6143
+      :lastmodtime '(21583 16233 0 0)
+      :unmatched-syntax nil))
+  :file "!home!talos!.cache!.fr-YXA1Ju!Jump!src!com!youhong!jump!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

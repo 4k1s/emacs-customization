@@ -1,0 +1,44 @@
+;; Object App/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "App/"
+  :tables
+  (list
+    (semanticdb-table "16.Newsfeeds.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("Newsfeeds" function nil nil [14 2335]))          
+      :file "16.Newsfeeds.js"
+      :pointmax 2336
+      :fsize 2335
+      :lastmodtime '(22893 7626 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "22.ShopProduct.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("ShopProduct" function nil nil [15 10703])
+            ("ProductSlider" function nil nil [10705 16590]))          
+      :file "22.ShopProduct.js"
+      :pointmax 16591
+      :fsize 17023
+      :lastmodtime '(23020 26323 522424 377000)
+      :unmatched-syntax nil)
+    (semanticdb-table "18.MainEvents.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("MainEvents" function nil nil [14 23449]))          
+      :file "18.MainEvents.js"
+      :pointmax 23449
+      :fsize 25312
+      :lastmodtime '(22879 31658 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "App.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "App.js"
+      :pointmax 18457
+      :fsize 18699
+      :lastmodtime '(22987 28790 0 0)
+      :unmatched-syntax nil))
+  :file "!var!www!wgr!projects!papino.gr!public_html!JavaScripts!App!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

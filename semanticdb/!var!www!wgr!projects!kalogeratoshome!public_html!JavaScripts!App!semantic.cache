@@ -1,0 +1,28 @@
+;; Object App/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "App/"
+  :tables
+  (list
+    (semanticdb-table "04.ThumbnailsViewer.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("Viewer" function nil nil [169 4138]))          
+      :file "04.ThumbnailsViewer.js"
+      :pointmax 4139
+      :fsize 4138
+      :lastmodtime '(23074 36121 800160 883000)
+      :unmatched-syntax nil)
+    (semanticdb-table "04.Zooming.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("Zooming" function nil nil [1 658])
+            ("ViewZoom" function (:arguments 
+              ( ("$obj" variable nil (reparse-symbol FormalParameterList) [678 682]))              ) nil [660 4344]))          
+      :file "04.Zooming.js"
+      :pointmax 4344
+      :fsize 4343
+      :lastmodtime '(22882 38242 0 0)
+      :unmatched-syntax nil))
+  :file "!var!www!wgr!projects!kalogeratoshome!public_html!JavaScripts!App!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,37 @@
+;; Object py/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "py/"
+  :tables
+  (list
+    (semanticdb-table "apihelper.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Cheap and simple API helper
+
+This program is part of \"Dive Into Python\", a free Python book for
+experienced programmers.  Visit http://diveintopython.org/ for the
+latest version.
+\"\"\"" code nil nil [1 186])
+            ("__author__" variable nil nil [188 241])
+            ("__version__" variable nil nil [242 274])
+            ("__date__" variable nil nil [275 316])
+            ("__copyright__" variable nil nil [317 366])
+            ("__license__" variable nil nil [367 389])
+            ("info" function
+               (:documentation "Print methods and doc strings.
+
+	Takes module, class, list, dictionary, or string."
+                :arguments 
+                  ( ("object" variable nil (reparse-symbol function_parameters) [1251 1257])
+                    ("spacing" variable nil (reparse-symbol function_parameters) [1259 1266])
+                    ("collapse" variable nil (reparse-symbol function_parameters) [1271 1279]))                  )
+                nil [1242 1671])
+            ("if" code nil nil [1672 1719]))          
+      :file "apihelper.py"
+      :pointmax 1719
+      :fsize 1718
+      :lastmodtime '(16536 51344 0 0)
+      :unmatched-syntax nil))
+  :file "!home!talos!Desktop!library!python!pdf!py!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

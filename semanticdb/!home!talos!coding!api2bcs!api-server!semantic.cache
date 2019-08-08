@@ -1,0 +1,52 @@
+;; Object api-server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api-server/"
+  :tables
+  (list
+    (semanticdb-table "api-app.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [14 72])
+            ("model.dbInit" include nil nil [140 167])
+            ("model.UserInfo" include nil nil [168 203])
+            ("db_user" variable nil nil [205 225])
+            ("db_pass" variable nil nil [226 244])
+            ("db_server" variable nil nil [245 268])
+            ("db_name" variable nil nil [269 287])
+            ("database_uri" code nil nil [288 372])
+            ("app" variable nil nil [375 396])
+            ("app" variable nil nil [397 449])
+            ("app" variable nil nil [450 502])
+            ("db" code nil nil [504 520])
+            ("" code nil nil [533 566])
+            ("signup" function nil nil [600 1384])
+            ("" code nil nil [1395 1418])
+            ("show_user_dashboard" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [1470 1472]))              ) nil [1446 1921])
+            ("" code nil nil [1932 1959])
+            ("show_ico_dashboard" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [2009 2011]))              ) nil [1986 2448])
+            ("" code nil nil [2459 2489])
+            ("show_wallet_dashboard" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [2535 2537]))              ) nil [2509 2980])
+            ("" code nil nil [2991 3023])
+            ("show_settings_dashboard" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [3080 3082]))              ) nil [3052 3531])
+            ("" code nil nil [3542 3599])
+            ("update_user_settings" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [3647 3649]))              ) nil [3622 3701])
+            ("" code nil nil [3712 3739])
+            ("show_user_list" function (:arguments 
+              ( ("admin_name" variable nil (reparse-symbol function_parameters) [3793 3803]))              ) nil [3774 3853])
+            ("" code nil nil [3864 3904])
+            ("appoving_user" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [3949 3951]))              ) nil [3931 4005])
+            ("if" code nil nil [4006 4068]))          
+      :file "api-app.py"
+      :pointmax 4068
+      :fsize 4205
+      :lastmodtime '(23177 5040 0 0)
+      :unmatched-syntax nil))
+  :file "!home!talos!coding!api2bcs!api-server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

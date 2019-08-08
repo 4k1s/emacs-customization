@@ -1,0 +1,16 @@
+;; Object coding/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "coding/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "test.py"
+      :pointmax 8
+      :fsize 7
+      :lastmodtime '(22963 58204 497738 368000)
+      :unmatched-syntax '(($EOI 27 . 27))))
+  :file "!home!talos!coding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

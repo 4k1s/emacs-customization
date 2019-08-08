@@ -1,0 +1,47 @@
+;; Object cryptogr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cryptogr/"
+  :tables
+  (list
+    (semanticdb-table "ssi_examples.shtml"
+      :major-mode 'html-mode
+      :tags 
+        '( ("&lt;&lt; :: SMF SSI.php 2.0 RC4 :: &gt;&gt;" section nil nil [201 272])
+            ("SMF SSI.php Functions" section (:members 
+              ( ("SMF SSI.php Functions" section (:members 
+                  ( ("Recent Topics Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=recentTopics\" --&gt;" section nil nil [655 837])
+                    ("Recent Posts Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=recentPosts\" --&gt;" section nil nil [837 1016])
+                    ("Recent Poll Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=recentPoll\" --&gt;" section nil nil [1016 1192])
+                    ("Top Boards Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=topBoards\" --&gt;" section nil nil [1192 1365])
+                    ("Top Topics by View Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=topTopicsViews\" --&gt;" section nil nil [1365 1556])
+                    ("Top Topics by Replies Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=topTopicsReplies\" --&gt;" section nil nil [1556 1754])
+                    ("Top Poll Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=topPoll\" --&gt;" section nil nil [1754 1921])
+                    ("Top Poster Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=topPoster\" --&gt;" section nil nil [1921 2094])
+                    ("Topic's Poll Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=showPoll;ssi_topic=##\" --&gt;" section nil nil [2094 2292])
+                    ("Latest Member Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=latestMember\" --&gt;" section nil nil [2292 2474])
+                    ("Random Member Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=randomMember\" --&gt;" section nil nil [2474 2656])
+                    ("Board Stats: &lt;!--#include virtual=\"./SSI.php?ssi_function=boardStats\" --&gt;" section nil nil [2656 2823])
+                    ("Who's Online Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=whosOnline\" --&gt;" section nil nil [2823 3000])
+                    ("Log Online Presence + Who's Online Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=logOnline\" --&gt;" section nil nil [3000 3197])
+                    ("Welcome Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=welcome\" --&gt;" section nil nil [3197 3363])
+                    ("News Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=news\" --&gt;" section nil nil [3363 3520])
+                    ("Board News Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=boardNews\" --&gt;" section nil nil [3520 3693])
+                    ("Menubar Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=menubar\" --&gt;" section nil nil [3693 3859])
+                    ("Quick Search Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=quickSearch\" --&gt;" section nil nil [3859 4038])
+                    ("Login Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=login\" --&gt;" section nil nil [4038 4198])
+                    ("Log Out Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=logout\" --&gt;" section nil nil [4198 4362])
+                    ("Today's Birthdays Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=todaysBirthdays\" --&gt;" section nil nil [4362 4554])
+                    ("Today's Holidays Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=todaysHolidays\" --&gt;" section nil nil [4554 4743])
+                    ("Today's Events Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=todaysEvents\" --&gt;" section nil nil [4743 4926])
+                    ("Today's Calendar Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=todaysCalendar\" --&gt;" section nil nil [4926 5115])
+                    ("Recent Calendar Events Function: &lt;!--#include virtual=\"./SSI.php?ssi_function=recentEvents\" --&gt;" section nil nil [5115 5306])
+                    ("Recent Attachments Function &lt;!--#include virtual=\"./SSI.php?ssi_function=recentAttachments\" --&gt;" section (:members 
+                      ( ("SMF &copy; 2006&ndash;2010, Simple Machines LLC" anchor nil nil [5557 5560]))                      ) nil [5306 5910]))                  ) nil [359 5910]))              ) nil [272 5910]))          
+      :file "ssi_examples.shtml"
+      :pointmax 5910
+      :fsize 5909
+      :lastmodtime '(19652 38988 0 0)
+      :unmatched-syntax nil))
+  :file "!var!www!cryptogr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

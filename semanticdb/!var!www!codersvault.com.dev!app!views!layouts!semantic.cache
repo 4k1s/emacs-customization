@@ -1,0 +1,17 @@
+;; Object layouts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "layouts/"
+  :tables
+  (list
+    (semanticdb-table "template.volt"
+      :major-mode 'html-mode
+      :tags 
+        '( ("{% block say_hello %}{% endblock %}" section nil nil [12 82]))          
+      :file "template.volt"
+      :pointmax 82
+      :fsize 81
+      :lastmodtime '(22680 12635 269934 405000)
+      :unmatched-syntax nil))
+  :file "!var!www!codersvault.com.dev!app!views!layouts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

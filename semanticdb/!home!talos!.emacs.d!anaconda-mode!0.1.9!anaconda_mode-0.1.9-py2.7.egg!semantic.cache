@@ -1,0 +1,81 @@
+;; Object anaconda_mode-0.1.9-py2.7.egg/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "anaconda_mode-0.1.9-py2.7.egg/"
+  :tables
+  (list
+    (semanticdb-table "anaconda_mode.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    anaconda_mode
+    ~~~~~~~~~~~~~
+
+    This is anaconda_mode autocompletion server.
+
+    :copyright: (c) 2013-2016 by Artem Malyshev.
+    :license: GPL3, see LICENSE for more details.
+\"\"\"" code nil nil [1 194])
+            ("" code nil nil [219 299])
+            ("sys" include nil nil [301 311])
+            ("functools" include nil nil [312 339])
+            ("script_method" function
+               (:documentation "Create jedi.Script instance and apply f to it."
+                :arguments 
+                  ( ("f" variable nil (reparse-symbol function_parameters) [433 434]))                  )
+                nil [415 627])
+            ("process_definitions" function
+               (:documentation "Call f and convert it result into json dumpable format."
+                :arguments 
+                  ( ("f" variable nil (reparse-symbol function_parameters) [653 654]))                  )
+                nil [629 1275])
+            ("complete" function
+               (:documentation "Select auto-complete candidates for source position."
+                :arguments 
+                  ( ("script" variable nil (reparse-symbol function_parameters) [1326 1332]))                  
+                :decorators 
+                  ( ("script_method" function (:type "decorator") nil nil)
+                    ("process_definitions" function (:type "decorator") nil nil))                  )
+                nil [1277 1431])
+            ("goto_definitions" function
+               (:documentation "Get definitions for thing under cursor."
+                :arguments 
+                  ( ("script" variable nil (reparse-symbol function_parameters) [1490 1496]))                  
+                :decorators 
+                  ( ("script_method" function (:type "decorator") nil nil)
+                    ("process_definitions" function (:type "decorator") nil nil))                  )
+                nil [1433 1587])
+            ("goto_assignments" function
+               (:documentation "Get assignments for thing under cursor."
+                :arguments 
+                  ( ("script" variable nil (reparse-symbol function_parameters) [1646 1652]))                  
+                :decorators 
+                  ( ("script_method" function (:type "decorator") nil nil)
+                    ("process_definitions" function (:type "decorator") nil nil))                  )
+                nil [1589 1743])
+            ("usages" function
+               (:documentation "Get usage information for thing under cursor."
+                :arguments 
+                  ( ("script" variable nil (reparse-symbol function_parameters) [1792 1798]))                  
+                :decorators 
+                  ( ("script_method" function (:type "decorator") nil nil)
+                    ("process_definitions" function (:type "decorator") nil nil))                  )
+                nil [1745 1885])
+            ("eldoc" function
+               (:documentation "Return eldoc format documentation string or ''."
+                :arguments 
+                  ( ("script" variable nil (reparse-symbol function_parameters) [1912 1918]))                  
+                :decorators 
+                  ( ("script_method" function (:type "decorator") nil nil))                  )
+                nil [1887 2328])
+            ("app" variable nil nil [2330 2397])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [2409 2413]))              ) nil [2400 2470])
+            ("if" code nil nil [2535 2585]))          
+      :file "anaconda_mode.py"
+      :pointmax 2585
+      :fsize 2584
+      :lastmodtime '(23001 3523 243212 656000)
+      :unmatched-syntax nil))
+  :file "!home!talos!.emacs.d!anaconda-mode!0.1.9!anaconda_mode-0.1.9-py2.7.egg!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

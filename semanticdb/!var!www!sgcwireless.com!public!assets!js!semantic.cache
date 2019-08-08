@@ -1,0 +1,24 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "main.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "main.js"
+      :pointmax 4264
+      :fsize 4263
+      :lastmodtime '(22389 32428 412485 200000)
+      :unmatched-syntax '((PAREN_BLOCK 4254 . 4262) (PAREN_BLOCK 15 . 4254)))
+    (semanticdb-table "login.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "login.js"
+      :pointmax 202
+      :fsize 201
+      :lastmodtime '(22755 2310 379950 863000)
+      :unmatched-syntax '((DIV 204 . 205) (MULTIPLY 203 . 204) (PAREN_BLOCK 42 . 201) (DOT 36 . 37) (PAREN_BLOCK 25 . 36) (DIV 229 . 230) (MULTIPLY 228 . 229) (PAREN_BLOCK 42 . 226) (DOT 36 . 37) (PAREN_BLOCK 25 . 36) (DIV 231 . 232) (MULTIPLY 230 . 231) (CLOSE_PARENTHESIS 227 . 228) (END_BLOCK 226 . 227) (PAREN_BLOCK 104 . 224) (DOT 96 . 97) (PAREN_BLOCK 87 . 96) (PAREN_BLOCK 41 . 225) (DOT 35 . 36) (PAREN_BLOCK 24 . 35) (PAREN_BLOCK 41 . 295) (DOT 35 . 36) (PAREN_BLOCK 24 . 35) (PAREN_BLOCK 41 . 295) (DOT 35 . 36) (PAREN_BLOCK 24 . 35) (PAREN_BLOCK 41 . 295) (DOT 35 . 36) (PAREN_BLOCK 24 . 35) (PAREN_BLOCK 41 . 296) (DOT 35 . 36) (PAREN_BLOCK 24 . 35) (PAREN_BLOCK 41 . 297) (DOT 35 . 36) (PAREN_BLOCK 24 . 35) (PAREN_BLOCK 38 . 294) (DOT 32 . 33) (PAREN_BLOCK 21 . 32))))
+  :file "!var!www!sgcwireless.com!public!assets!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

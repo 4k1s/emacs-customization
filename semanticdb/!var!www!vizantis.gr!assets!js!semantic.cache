@@ -1,0 +1,17 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "storelocation.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("initMap" function nil nil [1 359]))          
+      :file "storelocation.js"
+      :pointmax 359
+      :fsize 358
+      :lastmodtime '(22813 12411 364899 651000)
+      :unmatched-syntax nil))
+  :file "!var!www!vizantis.gr!assets!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
