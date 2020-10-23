@@ -51,13 +51,17 @@
 ;;(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; node auto-complete
-(add-to-list 'load-path "~/.emacs.d/node-ac")
-(require 'node-ac-mode)
-(setq node-ac-node-modules-path "/usr/lib/node_modules/npm/node_modules")
+;;(add-to-list 'load-path "~/.emacs.d/node-ac")
+;;(require 'node-ac-mode)
+;;(setq node-ac-node-modules-path "/usr/lib/node_modules/npm/node_modules")
+
+;; solidity
+(add-to-list 'load-path "~/.emacs.d/emacs-solidity")
+(require 'solidity-mode)
 
 ;; for qml
-(autoload 'qml-mode "qml-mode" "Editing Qt Declarative." t)
-(add-to-list 'auto-mode-alist '("\\.qml$" . qml-mode))
+;;(autoload 'qml-mode "qml-mode" "Editing Qt Declarative." t)
+''(add-to-list 'auto-mode-alist '("\\.qml$" . qml-mode))
 
 ;; neotree
 (add-to-list 'load-path "~/.emacs.d/neotree")
@@ -68,3 +72,5 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/awesometab")
 (require 'awesome-tab)
 (awesome-tab-mode t)
+(global-set-key [M-down] 'awesome-tab-backward-tab)
+(global-set-key [M-up] 'awesome-tab-forward-tab)
